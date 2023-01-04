@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 
 log = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG)
 
 PATH = Path(__file__).parent
 PATH_OUTPUT = PATH / "site"
@@ -22,8 +23,11 @@ SERVER_ADDRESS = (IP, PORT)
 URL = f"http://{IP}:{PORT}"
 
 
-def copy_static_files():
+def copy_static_files(overwrite):
     """Copy static files"""
+    if overwrite:
+        shutil.rmtree(PATH_OUTPUT / "static")
+
     log.info("Copy static files")
     shutil.copytree(PATH / "static", PATH_OUTPUT / "static")
 
@@ -41,7 +45,10 @@ def cli():
 
 
 @cli.command("generate")
-def generate():
+@click.option(
+    "--overwrite", default=False, is_flag=True, help="Overwrite existing output files."
+)
+def generate(overwrite):
     """Generate webpage sites"""
     loader = FileSystemLoader(searchpath="./templates")
     template_env = Environment(loader=loader)
@@ -68,9 +75,13 @@ def generate():
             content_html = template.render(content=content)
 
             log.info(f"Writing {filename_output}")
+
+            if filename_output.exists() and not overwrite:
+                raise IOError(f"File {filename_output} already exists")
+
             output_file.write(content_html)
 
-    copy_static_files()
+    copy_static_files(overwrite=overwrite)
 
 
 @cli.command("clean")
@@ -90,6 +101,8 @@ def serve():
 
     """
     Thread(target=open_site).start()
+    
+    log.info(f"Serve website at {PATH_OUTPUT}")
     handler = partial(SimpleHTTPRequestHandler, directory=str(PATH_OUTPUT))
     httpd = HTTPServer(SERVER_ADDRESS, handler)
 
