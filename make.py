@@ -15,10 +15,10 @@ log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 PATH = Path(__file__).parent
-PATH_OUTPUT = PATH / "site"
+PATH_OUTPUT = PATH / "docs"
 
 IP = "localhost"
-PORT = 8000
+PORT = 4000
 SERVER_ADDRESS = (IP, PORT)
 URL = f"http://{IP}:{PORT}"
 
@@ -102,7 +102,7 @@ def serve():
     """
     Thread(target=open_site).start()
     
-    log.info(f"Serve website at {PATH_OUTPUT}")
+    log.info(f"Serve website at {URL}")
     handler = partial(SimpleHTTPRequestHandler, directory=str(PATH_OUTPUT))
     httpd = HTTPServer(SERVER_ADDRESS, handler)
 
