@@ -22,6 +22,13 @@ PORT = 4000
 SERVER_ADDRESS = (IP, PORT)
 URL = f"http://{IP}:{PORT}"
 
+NAVBAR_ITEMS = {
+    "home": "index",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact",
+    }
+
 
 def copy_static_files(overwrite):
     """Copy static files"""
@@ -57,14 +64,17 @@ def generate(overwrite):
 
     template = template_env.get_template("main.html")
 
-    filenames = (PATH / "content").glob("*.md")
+    filenames = list((PATH / "content").glob("*.md"))
+
+    navbar_items = []
+
+    for caption, href in NAVBAR_ITEMS.items():
+        item = {"href": f"./{href}.html", "caption": caption}
+        navbar_items.append(item)
+
 
     for filename in filenames:
-
-        name = filename.stem
-
-        if name == "home":
-            name = "index"
+        name = "index" if filename.stem == "home" else filename.stem
 
         filename_output = PATH_OUTPUT / f"{name}.html"
 
@@ -74,7 +84,7 @@ def generate(overwrite):
             log.info(f"Reading {filename}")
             content = markdown(filename.read_text())
 
-            content_html = template.render(content=content)
+            content_html = template.render(content=content, navbar_items=navbar_items)
 
             log.info(f"Writing {filename_output}")
 
