@@ -84,7 +84,11 @@ def generate(overwrite):
             log.info(f"Reading {filename}")
             content = markdown(filename.read_text())
 
-            content_html = template.render(content=content, navbar_items=navbar_items)
+            content_html = template.render(
+                    content=content,
+                    navbar_items=navbar_items,
+                    active_page=filename.stem,
+                )
 
             log.info(f"Writing {filename_output}")
 

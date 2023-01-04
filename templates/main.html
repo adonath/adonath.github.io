@@ -28,7 +28,12 @@
 
         <div class="menu">
             {% for item in navbar_items %}
-                <a href="{{ item.href }}">{{ item.caption }}</a>
+                {% if item.caption == active_page %}
+                    <a href="{{ item.href }}" class="active-page">{{ item.caption }}</a>
+                {% else %}
+                    <a href="{{ item.href }}">{{ item.caption }}</a>
+                {% endif %}
+                
                 {% if item.caption != 'contact' %}|{% endif %}
             {% endfor %}
         </div>
