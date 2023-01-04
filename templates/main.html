@@ -1,6 +1,5 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 
 <head>
@@ -14,7 +13,7 @@
 
     <title>Axel Donath</title>
     <meta name="author" content="Axel Donath">
-    <link href="css/default.css" rel="stylesheet" type="text/css">
+    <link href="static/css/default.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -23,38 +22,26 @@
         <div class="header">
             <h1>Axel Donath</h1>
             <a href="http://axeldonath.com">
-                <img src="images/adonath_avatar.png" alt="[Avatar]" style="width:128px;height:128px;" />
+                <img src="static/images/adonath_avatar.png" alt="[Avatar]" style="width:128px;height:128px;" />
             </a>
         </div>
 
         <div class="menu">
             <a href="./"><b>home</b></a> |
-            <a href="./pages/about.html">about</a> |
-            <a href="./pages/projects.html">projects</a> |
-            <a href="./pages/contact.html">contact</a>
+            <a href="./about.html">about</a> |
+            <a href="./projects.html">projects</a> |
+            <a href="./contact.html">contact</a>
         </div>
 
         <div class="text">
-            <p>
-                I'm a Postdoc researcher at the <a href="https://www.cfa.harvard.edu">Center for Astrophysics </a>. I
-                work on statistical methods for analysis of low counts astronomical data.
-            </p>
-            <p>
-                My research interests include the Galactic X-Ray and Gamma-Ray source populations
-                as well as statistical methods for analysis of low counts data in general.
-                I'm is also interested in methods to combine data from multiple instruments.
-                I'm the lead developer of the open source software package <a href="https://gammapy.org">Gammapy</a>,
-                sub-package maintainer of <a href="https://astropy.org">Astropy</a> and a member of the 
-                <a href="https://hea-www.harvard.edu/astrostat/">CHASC astro-statistics collaboration</a>.
-                I'm also editor for the Astronomy and Astrophysics track of <a href="https://joss.theoj.org">JOSS</a>.
-            </p>
-
+            {{ content }}
         </div>
 
         <div class="footer">
             <p>
-                Created by <a href="http://axeldonath.com">Axel Donath</a> © 2023 using <a href="https://jinja.palletsprojects.com/">Jinja 2
-                    </a> and <a href="https://daringfireball.net/projects/markdown/">Markdown 2</a>.
+                Created by <a href="http://axeldonath.com">Axel Donath</a> © 2023 using <a
+                    href="https://jinja.palletsprojects.com/">Jinja 2
+                </a> and <a href="https://daringfireball.net/projects/markdown/">Markdown 2</a>.
             </p>
         </div>
 
