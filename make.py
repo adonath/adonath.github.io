@@ -15,7 +15,7 @@ log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 PATH = Path(__file__).parent
-PATH_OUTPUT = PATH / "docs"
+PATH_OUTPUT = PATH / "site"
 
 IP = "localhost"
 PORT = 4000
