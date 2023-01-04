@@ -1,0 +1,109 @@
+:root {
+    --darkorange: rgb(238, 105, 37);
+    --darkpurple: rgb(50, 10, 94);
+    --lightgray: rgb(170, 170, 170);
+    --gray: rgb(128, 128, 128);
+    --darkgray: rgb(45, 45, 45);
+}
+
+.header {
+    text-align: center;
+    margin: 0em;
+    padding: 0em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text {
+    margin: 0em;
+    padding: 0em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    clear: both;
+    overflow: auto;
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.footer {
+    color: var(--gray);
+    font-size: 80%;
+    margin: 0em;
+    border-top: 1px solid var(--lightgray);
+    padding: 0em;
+    padding-top: 0.5em;
+}
+
+.menu {
+    text-align: center;
+    border-top: 1px solid var(--lightgray);
+    border-bottom: 1px solid var(--lightgray);
+    margin: 0em;
+    padding: 0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    /* or 950px */
+}
+
+body {
+    font: normal 13px/1.75em avenir, sans-serif;
+    color: var(--darkgray);
+    /* text-align: justify; */
+    background: #fff;
+    padding: 0em;
+    margin: 0em;
+}
+
+p {
+    margin: 0em;
+    padding: 0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: avenir, arial, sans-serif;
+    font-weight: normal;
+    margin: 0em;
+    padding: 0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 250%
+}
+
+h2 {
+    font-size: 200%
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h4 {
+    font-size: 125%;
+}
+
+a {
+    /*font-style: italic;*/
+    font-weight: bold;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--darkorange);
+}
