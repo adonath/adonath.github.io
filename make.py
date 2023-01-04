@@ -25,11 +25,13 @@ URL = f"http://{IP}:{PORT}"
 
 def copy_static_files(overwrite):
     """Copy static files"""
-    if overwrite:
-        shutil.rmtree(PATH_OUTPUT / "static")
+    path = PATH_OUTPUT / "static"
+
+    if path.exists() and overwrite:
+        shutil.rmtree(path)
 
     log.info("Copy static files")
-    shutil.copytree(PATH / "static", PATH_OUTPUT / "static")
+    shutil.copytree(PATH / "static", path)
 
 
 def open_site():
