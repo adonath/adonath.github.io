@@ -9,7 +9,7 @@ instruments to improve their scientific results.
 
 The project was started by my PhD supervisor [Christoph Deil](https://christophdeil.com) almost a decade ago. Since then *Gammapy* has accumulated >100 users in the gamma-ray astronomy community and is expected to grow further. In 2020 the project has been selected as the base library for the official Science Tools of the [Cherenkov Telescope Array](https://www.cta-observatory.org). In February 2022 the software was awarded the [Jury Prize of the Open Science Awards](https://www.ouvrirlascience.fr/open-science-free-software-award-ceremony/) at the Open Science European Conference in Paris. In November 2022 we released the first long term support (LTS) version v1.0.
 
-Links:
+**Links:**
 [Webpage](https://gammapy.org) | [Docs](https://docs.gammapy.org) | [GitHub](https://github.com/gammapy/gammapy) | [Paper Draft](https://github.com/gammapy/gammapy-v1.0-paper/raw/main-pdf/ms.pdf) | [ICRC 2021 Virtual Poster (best poster award)](https://video.desy.de/video/Gammapy-a-Python-Package-for-Gamma-Ray-Astronomy/70ff153f6d30ac6b8ab86f90ce1fba2a)
 
 
@@ -20,11 +20,11 @@ Links:
 _________________________
 <img src="static/images/pylira-logo.png" alt="drawing" style="float:left;width:128px;"/>
 
-*Pylira* is a Python package for deconvolution of astronomical images in the presence of Poisson noise.
+*Pylira* is a **Python package for deconvolution of astronomical images in the presence of Poisson noise**.
+It is based on a Bayesian statistical approach and allows to sample images from the posterior distribution under a hierarchical multiscale prior. The sampling approach allows astronomers to measure uncertainties of the reconstructed image along with the posterior mean. The package itself is mostly a Python wrapper around an existing R implementation based on [*pybind11*](https://pybind11.readthedocs.io). On top it offers convenience functionality to serialise and visualise the
+results and check for their validity.
 
-MCMC sampling Hierarchical multiscale prior. Allows users to uncertainties.
-It is mostly a wrapper around a R package. It uses *pybind11*. 
-
+**Links:**
 [Docs](https://pylira.readthedocs.io/en/latest/) | [GitHub](https://github.com/astrostat/pylira) | [Proceeding](https://conference.scipy.org/proceedings/scipy2022/pdfs/donath.pdf) | 
 [Scipy 2022 Talk](https://youtu.be/FYleK2-fjKE)
 
