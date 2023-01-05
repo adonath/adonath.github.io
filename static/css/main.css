@@ -115,7 +115,7 @@ h1 {
 }
 
 h2 {
-    font-size: 200%
+    font-size: 200%;
 }
 
 h3 {
@@ -140,5 +140,5 @@ a:hover {
 
 hr {
     margin-top: 1px;
-    margin-bottom: 1px
+    margin-bottom: 1px;
 }
