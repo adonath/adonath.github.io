@@ -1,8 +1,8 @@
 :root {
     --darkorange: rgb(238, 105, 37);
     --darkpurple: rgb(50, 10, 94);
-    --lightpurple: rgb(88, 21, 160);
-    --lightgray: rgb(170, 170, 170);
+    --lightpurple: rgb(65, 15, 118);
+    --lightgray: rgb(164, 164, 164);
     --gray: rgb(128, 128, 128);
     --darkgray: rgb(64, 64, 64);
 }
@@ -55,8 +55,20 @@
     padding-bottom: 0.5em;
 }
 
+.menu a {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--darkpurple);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--darkorange);
+    text-decoration: none;
+}
+
 .menu a.active-page {
-    font-weight: normal;
+    font-weight: bold;
     color: var(--darkorange);
 }
 
@@ -89,6 +101,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--darkpurple);
     font-family: avenir, arial, sans-serif;
     font-weight: normal;
     margin: 0em;
@@ -98,7 +111,7 @@ h6 {
 }
 
 h1 {
-    font-size: 250%
+    font-size: 250%;
 }
 
 h2 {
@@ -114,9 +127,10 @@ h4 {
 }
 
 a {
-    /*font-style: italic;*/
+    font-style: italic;
     font-weight: normal;
     color: var(--lightpurple);
+    text-decoration: none;
 }
 
 a:hover {
