@@ -1,6 +1,6 @@
 ## Vitae
 _________________________
-I am a Postdoc researcher at the [Center for Astrophysics | Harvard & Smithsonian](https://www.cfa.harvard.edu) in Cambridge MA, where I research in the field of X-ray and gamma-ray astronomy.
+I am a Postdoc researcher at the [Center for Astrophysics | Harvard & Smithsonian](https://www.cfa.harvard.edu) in Cambridge MA, where I research in the field of X-ray and gamma-ray astronomy. Previously (until 2020) I have worked at the [Max Planck Institute for Nuclear Physics](https://www.mpi-hd.mpg.de/mpi/de/) in Heidelberg, where I also did my PhD.
 
 
 - I am interested in the global structure of the Milky-Way in GeV-TeV gamma-rays and the Galactic gamma-ray source population. This includes association and classification of TeV gamma-ray sources in context of source catalog production as well as separation of sources from interstellar diffuse gamma-ray emission.
