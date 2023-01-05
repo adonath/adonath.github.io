@@ -44,6 +44,6 @@ More info soon...
 ## Other
 _________________________
 I have contributed to other astronomical open source software projects, such as [*Astropy*](https://astropy.org), where I am also one of the sub-package maintainers for *astropy.convolution*.
-I have made mutiple minor contributions to *Astropy* affiliated packages such as [*photutils*](https://github.com/astropy/photutils), [*regions*](https://github.com/astropy/regions) and [*hipspy*](https://github.com/hipspy/hips). I wrote the [initial prototype](https://github.com/adonath/blob_detection) for *Scikit-image’s* [blob detection functionality](https://scikit-image.org/docs/dev/auto_examples/features_detection/plot_blob.html).
+I have made multiple minor contributions to *Astropy* affiliated packages such as [*photutils*](https://github.com/astropy/photutils), [*regions*](https://github.com/astropy/regions) and [*hipspy*](https://github.com/hipspy/hips). I wrote the [initial prototype](https://github.com/adonath/blob_detection) for *Scikit-image’s* [blob detection functionality](https://scikit-image.org/docs/dev/auto_examples/features_detection/plot_blob.html).
 
-I also contributed [*gamma-cat*](https://github.com/gammapy/gamma-cat), an open source data collection for gamma-ray astronomy.
+I also contributed to [*gamma-cat*](https://github.com/gammapy/gamma-cat), an open source data collection for gamma-ray astronomy.
