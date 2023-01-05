@@ -4,7 +4,7 @@
     --lightpurple: rgb(88, 21, 160);
     --lightgray: rgb(170, 170, 170);
     --gray: rgb(128, 128, 128);
-    --darkgray: rgb(45, 45, 45);
+    --darkgray: rgb(64, 64, 64);
 }
 
 .header {
@@ -56,10 +56,9 @@
 }
 
 .menu a.active-page {
-    font-weight: bold;
-    color: var(--darkpurple);
+    font-weight: normal;
+    color: var(--darkorange);
 }
-
 
 .container {
     margin-right: auto;
