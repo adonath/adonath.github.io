@@ -4,7 +4,8 @@
     --lightpurple: rgb(65, 15, 118);
     --lightgray: rgb(164, 164, 164);
     --gray: rgb(128, 128, 128);
-    --darkgray: rgb(64, 64, 64);
+    --darkgray: rgb(32, 32, 32);
+    --white: #fff;
 }
 
 .container {
@@ -126,7 +127,7 @@ body {
     font: normal 14px/1.75em avenir, sans-serif;
     color: var(--darkgray);
     /* text-align: justify; */
-    background: #fff;
+    background: var(--white);
     padding: 0em;
     margin: 0em;
 }
