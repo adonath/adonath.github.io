@@ -48,7 +48,8 @@
 }
 
 .menu {
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
     border-top: 1px solid var(--lightgray);
     border-bottom: 1px solid var(--lightgray);
     margin: 0em;
@@ -80,6 +81,32 @@
     max-width: 800px;
     /* or 950px */
 }
+
+.menu-left {
+    width: 20%;
+    text-align: left;
+    padding: 0em;
+}
+
+.menu-center{
+    width: 60%;
+    text-align: center;
+    padding: 0em;
+}
+
+.menu-right{
+    width: 20%;
+    text-align: right;
+    padding: 0em;
+}
+
+.menu-right a {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--gray);
+    text-decoration: none;
+}
+
 
 body {
     font: normal 14px/1.75em avenir, sans-serif;

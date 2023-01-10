@@ -10,6 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/8bf43fed4f.js" crossorigin="anonymous"></script>
+
     <title>Axel Donath</title>
     <meta name="author" content="Axel Donath">
     <link href="static/css/main.css" rel="stylesheet" type="text/css">
@@ -23,18 +26,32 @@
             <a href="http://axeldonath.com">
                 <img src="static/images/adonath_avatar.png" alt="[Avatar]" style="width:128px;height:128px;" />
             </a>
+            <br>
+            <!-- Add font awesome icons -->
         </div>
 
         <div class="menu">
-            {% for item in navbar_items %}
-            {% if item.caption == active_page %}
-            <a href="{{ item.href }}" class="active-page">{{ item.caption }}</a>
-            {% else %}
-            <a href="{{ item.href }}">{{ item.caption }}</a>
-            {% endif %}
+            <p class="menu-left">
+                <!-- Space holder for symmetry-->
+            </p>
+            <p class="menu-center">
+                {% for item in navbar_items %}
+                {% if item.caption == active_page %}
+                <a href="{{ item.href }}" class="active-page">{{ item.caption }}</a>
+                {% else %}
+                <a href="{{ item.href }}">{{ item.caption }}</a>
+                {% endif %}
 
-            {% if item.caption != 'contact' %}|{% endif %}
-            {% endfor %}
+                {% if item.caption != 'contact' %}|{% endif %}
+                {% endfor %}
+            </p>
+
+            <p class="menu-right">
+                <a href="https://github.com/adonath"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/axeldonath"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://orcid.org/0000-0003-4568-7005"><i class="fa-brands fa-orcid" ></i></a>
+            </p>
+
         </div>
 
         <div class="text">
