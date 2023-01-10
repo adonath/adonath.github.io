@@ -25,6 +25,7 @@ URL = f"http://{IP}:{PORT}"
 NAVBAR_ITEMS = {
     "home": "index",
     "about": "about",
+    "research": "research",
     "software": "software",
     "contact": "contact",
     }

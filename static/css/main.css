@@ -66,6 +66,7 @@
 
 .menu-right{
     width: 15%;
+    min-width: 5em;
     text-align: center;
     padding: 0em;
     font-size: 1.3em;
@@ -84,7 +85,7 @@
     margin: 0em;
     padding: 0em;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     clear: both;
     overflow: auto;
     width: 100%;

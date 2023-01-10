@@ -1,5 +1,3 @@
-## Vitae
-_________________________
 I am a Postdoc researcher at the [Center for Astrophysics | Harvard & Smithsonian](https://www.cfa.harvard.edu) in Cambridge MA, where I research in the field of X-ray and gamma-ray astronomy. Previously (until 2020) I have worked at the [Max Planck Institute for Nuclear Physics](https://www.mpi-hd.mpg.de/mpi/de/) in Heidelberg, where I also did my PhD.
 
 
@@ -10,12 +8,3 @@ I am a Postdoc researcher at the [Center for Astrophysics | Harvard & Smithsonia
 - I am also interested in open source software development and reproducible, open science.
 
 Here you can find my complete [CV for download](https://github.com/adonath/adonath-cv/raw/build/adonath-cv.pdf).
-
-</br>
-
-
-## Publications
-_________________________
-
-My list of puplications can be found on [ADS](), [Google Scholar](https://scholar.google.com/citations?user=vH26Bj0AAAAJ&hl=de) and my [ORCID Page](https://orcid.org/0000-0003-4568-7005)
-
