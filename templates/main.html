@@ -26,14 +26,15 @@
             <a href="http://axeldonath.com">
                 <img src="static/images/adonath_avatar.png" alt="[Avatar]" style="width:128px;height:128px;" />
             </a>
-            <br>
-            <!-- Add font awesome icons -->
+            <div class="social-icons">
+                <a href="https://github.com/adonath"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;</a>
+                <a href="https://linkedin.com/in/axeldonath"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;</a>
+                <a href="https://orcid.org/0000-0003-4568-7005"><i class="fa-brands fa-orcid" ></i></a>
+            </div>
+
         </div>
 
         <div class="menu">
-            <p class="menu-left">
-                <!-- Space holder for symmetry-->
-            </p>
             <p class="menu-center">
                 {% for item in navbar_items %}
                 {% if item.caption == active_page %}
@@ -45,13 +46,6 @@
                 {% if item.caption != 'contact' %}|{% endif %}
                 {% endfor %}
             </p>
-
-            <p class="menu-right">
-                <a href="https://github.com/adonath"><i class="fa-brands fa-github"></i>&nbsp;</a>
-                <a href="https://linkedin.com/in/axeldonath"><i class="fa-brands fa-linkedin"></i>&nbsp;</a>
-                <a href="https://orcid.org/0000-0003-4568-7005"><i class="fa-brands fa-orcid" ></i></a>
-            </p>
-
         </div>
 
         <div class="text">

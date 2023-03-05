@@ -23,6 +23,18 @@
     padding-bottom: 1em;
 }
 
+.social-icons {
+    padding-top: 1.5em;
+}
+
+
+.social-icons a {
+    font-style: normal;
+    font-weight: normal;
+    color: var(--gray);
+    text-align: center;
+    font-size: 1.8em;
+}
 
 .menu {
     display: flex;
@@ -52,33 +64,10 @@
     color: var(--darkorange);
 }
 
-.menu-left {
-    width: 15%;
-    text-align: center;
-    padding: 0em;
-}
-
 .menu-center{
-    width: 70%;
+    width: 100%;
     text-align: center;
     padding: 0em;
-}
-
-.menu-right{
-    width: 15%;
-    min-width: 5em;
-    text-align: center;
-    padding: 0em;
-    font-size: 1.3em;
-    position: relative;
-    top: 0.15em;
-}
-
-.menu-right a {
-    font-style: normal;
-    font-weight: bold;
-    color: var(--gray);
-    text-decoration: none;
 }
 
 .text {
@@ -89,7 +78,7 @@
     clear: both;
     overflow: auto;
     width: 100%;
-    max-height: 500px;
+    /* max-height: 500px; */
     overflow-y: auto;
 }
 
