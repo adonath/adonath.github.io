@@ -12,7 +12,7 @@ from multiple instruments, such as the
 and [Fermi-LAT](https://fermi.gsfc.nasa.gov) but also X-ray observatories such as
 [Chandra](https://chandra.harvard.edu). By advocating openess I hope to
 facilitate collaboration between astronomical observatories for better,
-more open and reprocible science.
+more open and reproducible science.
 
 I'm the lead developer of the open source software package [Gammapy](https://gammapy.org),
 sub-package maintainer of [Astropy](https://astropy.org) and a member of the
