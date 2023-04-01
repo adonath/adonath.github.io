@@ -41,6 +41,17 @@ More info soon...
 </br>
 
 
+## Snakemake Workflows
+_________________________
+
+I developed and maintain [Snakemake](https://snakemake.github.io) workflows for convenient and reproducible data analysis of X-ray and gamma-ray data.
+
+**Links**
+[Snakemake workflow for Fermi-LAT](https://github.com/adonath/snakemake-workflow-fermi-lat) | [Snakemake workflow Chandra](https://github.com/adonath/snakemake-workflow-chandra)
+
+<\br>
+
+
 ## Other
 _________________________
 I have contributed to other astronomical open source software projects, such as [*Astropy*](https://astropy.org), where I am also one of the sub-package maintainers for *astropy.convolution*.
