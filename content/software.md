@@ -45,11 +45,12 @@ More info soon...
 _________________________
 
 I developed and maintain [Snakemake](https://snakemake.github.io) workflows for convenient and reproducible data analysis of X-ray and gamma-ray data.
+Snakemake is a workflow management tool used in Bioninformatics that allows user to define, execute and share complex scalable analysis workflows.
 
-**Links**
-[Snakemake workflow for Fermi-LAT](https://github.com/adonath/snakemake-workflow-fermi-lat) | [Snakemake workflow Chandra](https://github.com/adonath/snakemake-workflow-chandra)
+**Links**:
+[Snakemake workflow for Fermi-LAT](https://github.com/adonath/snakemake-workflow-fermi-lat) | [Snakemake workflow for Chandra](https://github.com/adonath/snakemake-workflow-chandra)
 
-<\br>
+</br>
 
 
 ## Other
