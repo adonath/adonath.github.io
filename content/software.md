@@ -10,7 +10,7 @@ instruments to improve their scientific results.
 The project was started by my PhD supervisor [Christoph Deil](https://christophdeil.com) almost a decade ago. Since then *Gammapy* has accumulated >100 users in the gamma-ray astronomy community and is expected to grow further. In 2020 the project has been selected as the base library for the official Science Tools of the [Cherenkov Telescope Array](https://www.cta-observatory.org). In February 2022 the software was awarded the [Jury Prize of the Open Science Awards](https://www.ouvrirlascience.fr/open-science-free-software-award-ceremony/) at the Open Science European Conference in Paris. In November 2022 we released the first long term support (LTS) version v1.0.
 
 **Links:**
-[Webpage](https://gammapy.org) | [Docs](https://docs.gammapy.org) | [GitHub](https://github.com/gammapy/gammapy) | [Paper Draft](https://github.com/gammapy/gammapy-v1.0-paper/raw/main-pdf/ms.pdf) | [ICRC 2021 Virtual Poster (best poster award)](https://video.desy.de/video/Gammapy-a-Python-Package-for-Gamma-Ray-Astronomy/70ff153f6d30ac6b8ab86f90ce1fba2a)
+[Webpage](https://gammapy.org) | [Docs](https://docs.gammapy.org) | [GitHub](https://github.com/gammapy/gammapy) | [Paper Draft](https://github.com/gammapy/gammapy-v1.0-paper/raw/main-pdf/ms.pdf) | [ICRC 2021 Virtual Poster (best poster award)](https://video.desy.de/video/Gammapy-a-Python-Package-for-Gamma-Ray-Astronomy/70ff153f6d30ac6b8ab86f90ce1fba2a) | [Scipy 2023 Talk](https://youtu.be/NOX-jVj4IPA?si=Ueo2toyeJnsHjw9M)
 
 
 </br>
