@@ -12,6 +12,12 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 800px;
+    background: var(--white);
+    padding-left: 3em;
+    padding-right: 3em;
+    height: 100vh;
+    overflow-y: auto;
+    /* box-shadow: 0 0 3px 0px white; */
     /* or 950px */
 }
 
@@ -76,10 +82,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     clear: both;
-    overflow: auto;
     width: 100%;
-    /* max-height: 500px; */
-    overflow-y: auto;
 }
 
 .footer {
@@ -118,8 +121,14 @@ body {
     color: var(--darkgray);
     /* text-align: justify; */
     background: var(--white);
+    background-image: url("../images/webpage-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     padding: 0em;
     margin: 0em;
+    height: 100vh;
 }
 
 p {
