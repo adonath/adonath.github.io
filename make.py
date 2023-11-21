@@ -27,8 +27,12 @@ NAVBAR_ITEMS = {
     "about": "about",
     "research": "research",
     "software": "software",
+    "blog": "blog",
     "contact": "contact",
-    }
+}
+
+loader = FileSystemLoader(searchpath="./templates")
+TEMPLATE_ENV = Environment(loader=loader)
 
 
 def copy_static_files(overwrite):
@@ -60,10 +64,7 @@ def cli():
 )
 def generate(overwrite):
     """Generate webpage sites"""
-    loader = FileSystemLoader(searchpath="./templates")
-    template_env = Environment(loader=loader)
-
-    template = template_env.get_template("main.html")
+    template = TEMPLATE_ENV.get_template("main.html")
 
     filenames = list((PATH / "content").glob("*.md"))
 
@@ -72,7 +73,6 @@ def generate(overwrite):
     for caption, href in NAVBAR_ITEMS.items():
         item = {"href": f"./{href}.html", "caption": caption}
         navbar_items.append(item)
-
 
     for filename in filenames:
         name = "index" if filename.stem == "home" else filename.stem
@@ -86,10 +86,10 @@ def generate(overwrite):
             content = markdown(filename.read_text())
 
             content_html = template.render(
-                    content=content,
-                    navbar_items=navbar_items,
-                    active_page=filename.stem,
-                )
+                content=content,
+                navbar_items=navbar_items,
+                active_page=filename.stem,
+            )
 
             log.info(f"Writing {filename_output}")
 
@@ -98,7 +98,81 @@ def generate(overwrite):
 
             output_file.write(content_html)
 
+    entries = generate_blog_entries(overwrite=overwrite)
+
+    generate_blog_index(
+        navbar_items=navbar_items,
+        template=template,
+        overwrite=overwrite,
+        entries=entries,
+    )
+
     copy_static_files(overwrite=overwrite)
+
+
+def generate_blog_index(navbar_items, template, entries, overwrite=True):
+    """Generate blog index"""
+    filename_output = PATH_OUTPUT / "blog.html"
+
+    template_blog_entry = TEMPLATE_ENV.get_template("blog-entry-index.html")
+    content = template_blog_entry.render(entries=entries)
+
+    content_html = template.render(
+        content=content,
+        navbar_items=navbar_items,
+        active_page="blog",
+    )
+
+    with filename_output.open("w") as output_file:
+        if filename_output.exists() and not overwrite:
+            raise IOError(f"File {filename_output} already exists")
+
+        log.info(f"Writing {filename_output}")
+        output_file.write(content_html)
+
+
+def generate_blog_entries(overwrite=True):
+    """Generate blog entries"""
+    filenames = list((PATH / "content" / "blog").glob("**/*.md"))
+
+    template_blog = TEMPLATE_ENV.get_template("blog.html")
+
+    entries = []
+
+    for filename in filenames:
+        date = filename.parent.stem
+        filename_output = PATH_OUTPUT / "blog" / f"{date}/{filename.stem}.html"
+
+        filename_output.parent.mkdir(exist_ok=True, parents=True)
+
+        with filename_output.open("w") as output_file:
+            log.info(f"Reading {filename}")
+            content = markdown(
+                filename.read_text(),
+                extras=["fenced-code-blocks", "code-friendly", "metadata"],
+            )
+
+            content_html = template_blog.render(
+                content=content, next_page=None, previous_page=None
+            )
+
+            log.info(f"Writing {filename_output}")
+
+            if filename_output.exists() and not overwrite:
+                raise IOError(f"File {filename_output} already exists")
+
+            output_file.write(content_html)
+
+        entries.append(
+            {
+                "date": date,
+                "title": content.metadata.get("title", "Title missing"),
+                "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
+                "summary": content.metadata.get("summary", "Summary missing"),
+            }
+        )
+
+    return entries
 
 
 @cli.command("clean")
@@ -118,7 +192,7 @@ def serve():
 
     """
     Thread(target=open_site).start()
-    
+
     log.info(f"Serve website at {URL}")
     handler = partial(SimpleHTTPRequestHandler, directory=str(PATH_OUTPUT))
     httpd = HTTPServer(SERVER_ADDRESS, handler)
