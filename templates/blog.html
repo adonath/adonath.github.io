@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <script src="https://kit.fontawesome.com/8bf43fed4f.js" crossorigin="anonymous"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link href="../../static/css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/code.css" rel="stylesheet" type="text/css">
+    <title>Axel Donath</title>
+    <meta name="author" content="Axel Donath">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Blog</h1>
+        </div>
+
+        <div class="menu">
+            <p class="menu-blog-left">
+                {% if previous_page %}
+                <a href="{{ previous_page }}"> << </a>
+                {% endif %}
+            </p>
+            <p class="menu-blog-center">
+                <a href="../../blog.html"> Archive </a>
+            </p>
+            <p class="menu-blog-right">
+                {% if next_page %}
+                <a href="{{ next_page }}"> >> </a>
+                {% endif %}
+            </p>
+        </div>
+
+        <div class="text">
+            {{ content }}
+        </div>
+
+        <div class="footer">
+            <p class="footer-left">
+                © 2023 Created by <a href="http://axeldonath.com">Axel Donath </a>
+                using <a href="https://jinja.palletsprojects.com/">Jinja 2 </a>
+                and <a href="https://daringfireball.net/projects/markdown/">Markdown 2 </a>
+            </p>
+            <p class="footer-right">
+                Page source on <a href="https://github.com/adonath/adonath.github.io">GitHub</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

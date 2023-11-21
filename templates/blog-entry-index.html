@@ -1,0 +1,6 @@
+{% for entry in entries %}
+<p class="blog-entry-index-date">{{ entry.date }}</p>
+<a href="{{ entry.href }}" class="blog-entry-index-title">{{ entry.title }}</a>
+<p class="blog-entry-index-summary">{{ entry.summary }}</p>
+<br>
+{% endfor %}
