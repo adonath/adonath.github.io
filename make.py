@@ -119,6 +119,9 @@ def generate_blog_index(navbar_items, template, entries, overwrite=True):
     template_blog_entry = TEMPLATE_ENV.get_template("blog-entry-index.html")
     content = template_blog_entry.render(entries=entries)
 
+    if len(entries) == 0:
+        content = "<p>No blog entries yet.</p>"
+
     content_html = template.render(
         content=content,
         navbar_items=navbar_items,
