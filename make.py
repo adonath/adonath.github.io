@@ -2,6 +2,7 @@ import logging
 import shutil
 import time
 import webbrowser
+from datetime import datetime
 from functools import partial
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -131,17 +132,43 @@ def generate_blog_index(navbar_items, template, entries, overwrite=True):
         output_file.write(content_html)
 
 
+def get_filename_output(filename):
+    """Get output filename"""
+    date = filename.parent.stem
+    return f"{date}/{filename.stem}.html"
+
+
+def get_next_page(filenames, idx):
+    """Get next page"""
+    if idx == len(filenames) - 1:
+        return None
+
+    return "../" + get_filename_output(filenames[idx + 1])
+
+
+def get_previous_page(filenames, idx):
+    """Get previous page"""
+    if idx == 0:
+        return None
+
+    return "../" + get_filename_output(filenames[idx - 1])
+
+
 def generate_blog_entries(overwrite=True):
     """Generate blog entries"""
     filenames = list((PATH / "content" / "blog").glob("**/*.md"))
+
+    filenames.sort(
+        key=lambda x: datetime.strptime(x.parent.stem, "%Y-%m-%d"),
+        reverse=True,
+    )
 
     template_blog = TEMPLATE_ENV.get_template("blog.html")
 
     entries = []
 
-    for filename in filenames:
-        date = filename.parent.stem
-        filename_output = PATH_OUTPUT / "blog" / f"{date}/{filename.stem}.html"
+    for idx, filename in enumerate(filenames):
+        filename_output = PATH_OUTPUT / "blog" / get_filename_output(filename)
 
         filename_output.parent.mkdir(exist_ok=True, parents=True)
 
@@ -155,8 +182,8 @@ def generate_blog_entries(overwrite=True):
             content_html = template_blog.render(
                 toc=content.toc_html,
                 content=content,
-                next_page=None,
-                previous_page=None,
+                next_page=get_next_page(filenames, idx),
+                previous_page=get_previous_page(filenames, idx),
             )
 
             log.info(f"Writing {filename_output}")
@@ -168,7 +195,7 @@ def generate_blog_entries(overwrite=True):
 
         entries.append(
             {
-                "date": date,
+                "date": content.metadata.get("date", "Date missing"),
                 "title": content.metadata.get("title", "Title missing"),
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
