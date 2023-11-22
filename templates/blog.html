@@ -14,11 +14,16 @@
     <script src="https://kit.fontawesome.com/8bf43fed4f.js" crossorigin="anonymous">
     </script>
     <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    </script>
-    <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'>
-    </script>
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+      </script>
+      <script type="text/javascript"
+              src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
     <link href="../../static/css/main.css" rel="stylesheet" type="text/css">
     <link href="../../static/css/code.css" rel="stylesheet" type="text/css">
     <title>Axel Donath</title>
@@ -46,7 +51,15 @@
                 {% endif %}
             </p>
         </div>
+        <div class="blog-text-header">
 
+        </div>
+        <br>
+        <details>
+            <summary>Show table of contents</summary>
+
+            {{ toc }}
+        </details>
         <div class="text">
             {{ content }}
         </div>
