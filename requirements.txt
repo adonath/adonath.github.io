@@ -3,3 +3,4 @@ markdown2
 click
 black
 isort
+readtime

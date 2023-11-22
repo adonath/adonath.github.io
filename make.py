@@ -9,6 +9,7 @@ from pathlib import Path
 from threading import Thread
 
 import click
+import readtime
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 
@@ -176,11 +177,16 @@ def generate_blog_entries(overwrite=True):
             log.info(f"Reading {filename}")
             content = markdown(
                 filename.read_text(),
-                extras=["fenced-code-blocks", "code-friendly", "metadata", "toc"],
+                extras=["fenced-code-blocks", "code-friendly", "metadata"],
             )
 
+            date = content.metadata.get("date", "Date missing")
+
+            value = readtime.of_html(content)
+
             content_html = template_blog.render(
-                toc=content.toc_html,
+                date=date,
+                readtime=value,
                 content=content,
                 next_page=get_next_page(filenames, idx),
                 previous_page=get_previous_page(filenames, idx),

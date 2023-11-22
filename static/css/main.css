@@ -94,6 +94,26 @@
     float: left;
 }
 
+.blog-text-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.blog-text-header-left {
+    color: var(--lightgray);
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.blog-text-header-right {
+    color: var(--lightgray);
+    width: 50%;
+    text-align: right;
+    float: left;
+}
+
+
 .text {
     margin: 0em;
     padding: 0em;
