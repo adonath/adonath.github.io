@@ -149,11 +149,14 @@ def generate_blog_entries(overwrite=True):
             log.info(f"Reading {filename}")
             content = markdown(
                 filename.read_text(),
-                extras=["fenced-code-blocks", "code-friendly", "metadata"],
+                extras=["fenced-code-blocks", "code-friendly", "metadata", "toc"],
             )
 
             content_html = template_blog.render(
-                content=content, next_page=None, previous_page=None
+                toc=content.toc_html,
+                content=content,
+                next_page=None,
+                previous_page=None,
             )
 
             log.info(f"Writing {filename_output}")
