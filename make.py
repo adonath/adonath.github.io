@@ -183,7 +183,7 @@ def generate_blog_entries(overwrite=True):
                 extras=["fenced-code-blocks", "code-friendly", "metadata"],
             )
 
-            date = content.metadata.get("date", "Date missing")
+            date = content.metadata.get("date", "Date missing").replace("'", "")
 
             value = readtime.of_html(content)
 
@@ -204,7 +204,7 @@ def generate_blog_entries(overwrite=True):
 
         entries.append(
             {
-                "date": content.metadata.get("date", "Date missing"),
+                "date": date,
                 "title": content.metadata.get("title", "Title missing"),
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
