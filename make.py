@@ -208,6 +208,7 @@ def generate_blog_entries(overwrite=True):
                 "title": content.metadata.get("title", "Title missing"),
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
+                "readtime": value.text,
             }
         )
 

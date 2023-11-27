@@ -1,6 +1,10 @@
 {% for entry in entries %}
-<p class="blog-entry-index-date">{{ entry.date }}</p>
-<a href="{{ entry.href }}" class="blog-entry-index-title">{{ entry.title }}</a>
+<a href="{{ entry.href }}">
+<div class="blog-entry-index">
+<p class="blog-entry-index-title">{{ entry.title }}</p>
+<p class="blog-entry-index-date">Date: {{ entry.date }} | Estimated reading time: {{ entry.readtime }} </p>
 <p class="blog-entry-index-summary">{{ entry.summary }}</p>
+</div>
+</a>
 <br>
 {% endfor %}
