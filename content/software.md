@@ -16,6 +16,19 @@ The project was started by my PhD supervisor [Christoph Deil](https://christophd
 </br>
 
 
+## Jolideco
+_________________________
+<img src="static/images/jolideco-logo.png" alt="drawing" style="float:left;width:196px;margin:8px"/>
+
+*Jolideco* is a **Python package for joint deconvolution of astronomical images in the presence of Poisson noise**. It allows to reconstruct a single image from multiple observations of different instruments with different point spread functions and exposure times. For the reconstruction it uses a maximum a posteriori (MAP) estimate of the joint Poisson likelihood of all observations under a patch based image prior. The image prior is learned from astronomical images at other wavelengths, such as images from the James Webb
+Space Telescope (JWST) or GLEAM radio survey. It is the first package to offer a joint deconvolution and reconstruction of images for the x-ray and gamma-ray domain.
+
+**Links:**
+[Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Draft](https://github.com/adonath/jolideco-paper/raw/main-pdf/ms.pdf)
+
+
+</br>
+
 ## Pylira
 _________________________
 <img src="static/images/pylira-logo.png" alt="drawing" style="float:left;width:128px;"/>
@@ -27,15 +40,6 @@ results and check for their validity.
 **Links:**
 [Docs](https://pylira.readthedocs.io/en/latest/) | [GitHub](https://github.com/astrostat/pylira) | [Proceeding](https://conference.scipy.org/proceedings/scipy2022/pdfs/donath.pdf) | 
 [Scipy 2022 Talk](https://youtu.be/FYleK2-fjKE)
-
-
-</br>
-
-
-## Jolideco
-_________________________
-
-More info soon...
 
 
 </br>
