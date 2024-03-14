@@ -6,4 +6,4 @@ You can find me in some social networks:
 
 You can also contact me via email:
 
-<img src="static/images/mail.png" alt="drawing" style="margin:auto;display:block;width:350px;"/>
+<img src="static/images/mail.png" alt="drawing" style="margin:auto;display:block;width:300px;"/>
