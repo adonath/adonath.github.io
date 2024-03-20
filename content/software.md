@@ -24,7 +24,7 @@ _________________________
 based on [Pytorch](https://pytorch.org) and features a clean and extensible API. It is the first package to offer a joint deconvolution and reconstruction of images for the x-ray and gamma-ray domain.
 
 **Links:**
-[Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Draft](https://github.com/adonath/jolideco-paper/raw/main-pdf/ms.pdf)
+[Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Draft](https://github.com/adonath/jolideco-paper/raw/main-pdf/ms.pdf) | [AstroAI Talk 2024](https://www.youtube.com/watch?v=m9IkPz5HrK4)
 
 
 </br>
