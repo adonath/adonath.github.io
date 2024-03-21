@@ -10,7 +10,7 @@ from multiple instruments, such as the
 [Cherenkov Telescope Array Observatory (CTAO)](https://www.cta-observatory.org),
 [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/), [HAWC](https://www.hawc-observatory.org)
 and [Fermi-LAT](https://fermi.gsfc.nasa.gov) but also X-ray observatories such as
-[Chandra](https://chandra.harvard.edu). By advocating openess I hope to
+[Chandra](https://chandra.harvard.edu). By advocating openness I hope to
 facilitate collaboration between astronomical observatories for better,
 more open and reproducible science.
 

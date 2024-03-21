@@ -3,7 +3,7 @@ _________________________
 
 <img src="static/images/gammapy-logo.png" alt="drawing" style="float:left;width:128px;height:128px;"/>
 
-I am lead developer of a project called *Gammapy*. *Gammapy* is an **open source Python package for gamma-ray astronomy**. It supports the analyis of data from Imaging Atmospheric Cherenkov Telescopes, such as [CTA](https://www.cta-observatory.org), [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/)
+I am lead developer of a project called *Gammapy*. *Gammapy* is an **open source Python package for gamma-ray astronomy**. It supports the analysis of data from Imaging Atmospheric Cherenkov Telescopes, such as [CTA](https://www.cta-observatory.org), [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/)
 [MAGIC](https://magic.mpp.mpg.de/) and [VERITAS](https://veritas.sao.arizona.edu/), but also from all-sky instruments such as [Fermi-LAT](https://fermi.gsfc.nasa.gov/) and [HAWC](https://www.hawc-observatory.org/). It also allows users to combine data from all those
 instruments to improve their scientific results.
 
@@ -34,8 +34,7 @@ _________________________
 <img src="static/images/pylira-logo.png" alt="drawing" style="float:left;width:128px;"/>
 
 *Pylira* is a **Python package for deconvolution of astronomical images in the presence of Poisson noise**.
-It is based on a Bayesian statistical approach and allows to sample images from the posterior distribution under a hierarchical multiscale prior. The sampling approach allows astronomers to measure uncertainties of the reconstructed image along with the posterior mean. The package itself is mostly a Python wrapper around an existing R implementation based on [*pybind11*](https://pybind11.readthedocs.io). On top it offers convenience functionality to serialise and visualise the
-results and check for their validity.
+It is based on a Bayesian statistical approach and allows to sample images from the posterior distribution under a hierarchical multiscale prior. The sampling approach allows astronomers to measure uncertainties of the reconstructed image along with the posterior mean. The package itself is mostly a Python wrapper around an existing R implementation based on [*pybind11*](https://pybind11.readthedocs.io). On top it offers convenience functionality to serialise and visualise the results and check for their validity.
 
 **Links:**
 [Docs](https://pylira.readthedocs.io/en/latest/) | [GitHub](https://github.com/astrostat/pylira) | [Proceeding](https://conference.scipy.org/proceedings/scipy2022/pdfs/donath.pdf) | 
@@ -49,7 +48,7 @@ results and check for their validity.
 _________________________
 
 I developed and maintain [Snakemake](https://snakemake.github.io) workflows for convenient and reproducible data analysis of X-ray and gamma-ray data.
-Snakemake is a workflow management tool used in Bioninformatics that allows user to define, execute and share complex scalable analysis workflows.
+Snakemake is a workflow management tool used in Bioinformatics that allows user to define, execute and share complex scalable analysis workflows.
 
 **Links**:
 [Snakemake workflow for Fermi-LAT](https://github.com/adonath/snakemake-workflow-fermi-lat) | [Snakemake workflow for Chandra](https://github.com/adonath/snakemake-workflow-chandra)
