@@ -37,7 +37,7 @@ _________________________
 It is based on a Bayesian statistical approach and allows to sample images from the posterior distribution under a hierarchical multiscale prior. The sampling approach allows astronomers to measure uncertainties of the reconstructed image along with the posterior mean. The package itself is mostly a Python wrapper around an existing R implementation based on [*pybind11*](https://pybind11.readthedocs.io). On top it offers convenience functionality to serialise and visualise the results and check for their validity.
 
 **Links:**
-[Docs](https://pylira.readthedocs.io/en/latest/) | [GitHub](https://github.com/astrostat/pylira) | [Proceeding](https://conference.scipy.org/proceedings/scipy2022/pdfs/donath.pdf) | 
+[Docs](https://pylira.readthedocs.io/en/latest/) | [GitHub](https://github.com/astrostat/pylira) | [Proceeding](http://conference.scipy.org.s3-website-us-east-1.amazonaws.com/proceedings/scipy2022/pdfs/donath.pdf) | 
 [Scipy 2022 Talk](https://youtu.be/FYleK2-fjKE)
 
 
