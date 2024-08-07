@@ -202,10 +202,15 @@ def generate_blog_entries(overwrite=True):
 
             output_file.write(content_html)
 
+        for filename_image in filename.parent.glob("*.png"):
+            shutil.copy(filename_image, filename_output.parent / filename_image.name)
+
         entries.append(
             {
                 "date": date,
-                "title": content.metadata.get("title", "Title missing"),
+                "title": content.metadata.get("title", "Title missing").replace(
+                    "'", ""
+                ),
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
                 "readtime": value.text,
