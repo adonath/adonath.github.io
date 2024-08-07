@@ -180,7 +180,7 @@ def generate_blog_entries(overwrite=True):
             log.info(f"Reading {filename}")
             content = markdown(
                 filename.read_text(),
-                extras=["fenced-code-blocks", "code-friendly", "metadata"],
+                extras=["fenced-code-blocks", "code-friendly", "metadata", "toc"],
             )
 
             date = content.metadata.get("date", "Date missing").replace("'", "")
