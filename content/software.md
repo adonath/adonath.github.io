@@ -13,8 +13,6 @@ The project was started by my PhD supervisor [Christoph Deil](https://christophd
 [Webpage](https://gammapy.org) | [Docs](https://docs.gammapy.org) | [GitHub](https://github.com/gammapy/gammapy) | [Paper](https://www.aanda.org/articles/aa/full_html/2023/10/aa46488-23/aa46488-23.html) | [ICRC 2021 Virtual Poster (best poster award)](https://video.desy.de/video/Gammapy-a-Python-Package-for-Gamma-Ray-Astronomy/70ff153f6d30ac6b8ab86f90ce1fba2a) | [Scipy 2023 Talk](https://youtu.be/NOX-jVj4IPA?si=Ueo2toyeJnsHjw9M)
 
 
-</br>
-
 
 ## Jolideco
 _________________________
@@ -26,8 +24,6 @@ based on [Pytorch](https://pytorch.org) and features a clean and extensible API.
 **Links:**
 [Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Arxiv](https://arxiv.org/abs/2403.13933) | [AstroAI Talk 2024](https://www.youtube.com/watch?v=m9IkPz5HrK4)
 
-
-</br>
 
 ## Pylira
 _________________________
@@ -41,9 +37,6 @@ It is based on a Bayesian statistical approach and allows to sample images from 
 [Scipy 2022 Talk](https://youtu.be/FYleK2-fjKE)
 
 
-</br>
-
-
 ## Snakemake Workflows
 _________________________
 
@@ -52,8 +45,6 @@ Snakemake is a workflow management tool used in Bioinformatics that allows user 
 
 **Links**:
 [Snakemake workflow for Fermi-LAT](https://github.com/adonath/snakemake-workflow-fermi-lat) | [Snakemake workflow for Chandra](https://github.com/adonath/snakemake-workflow-chandra)
-
-</br>
 
 
 ## Other
