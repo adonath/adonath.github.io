@@ -109,14 +109,21 @@
 
 .blog-text-header-left {
     color: var(--lightgray);
-    width: 50%;
+    width: 15%;
     text-align: left;
+    float: left;
+}
+
+.blog-text-header-center {
+    color: var(--lightgray);
+    width: 70%;
+    text-align: center;
     float: left;
 }
 
 .blog-text-header-right {
     color: var(--lightgray);
-    width: 50%;
+    width: 15%;
     text-align: right;
     float: left;
 }
@@ -137,7 +144,6 @@
     padding-left: 1em;
     padding-right: 1em;
     border-left: solid 2px var(--white);
-    height: 128px;
 }
 
 .blog-entry-index:hover {

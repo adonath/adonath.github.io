@@ -33,10 +33,10 @@
 
 <body>
     <div class="container">
+        <a id="top"></a>
         <div class="header">
             <h1>Blog</h1>
         </div>
-
         <div class="menu">
             <p class="menu-blog-left">
                 {% if previous_page %}
@@ -53,17 +53,25 @@
             </p>
         </div>
         <div class="blog-text-header">
-        <p class="blog-text-header-left">
-            {{ date }}
-        </p>
-        <p class="blog-text-header-right">
-            {{ readtime }}
-        </p>
+            <p class="blog-text-header-left">
+                {{ date }}
+            </p>
+            <details class="blog-text-header-center">
+                <summary>Table of Contents</summary>
+                <div class="toc-content" style="text-align: left;">
+                    {{ toc }}
+                </div>
+            </details>
+            <p class="blog-text-header-right">
+                {{ readtime }}
+            </p>
         </div>
         <div class="text">
             {{ content }}
         </div>
-
+        <div style="text-align:center;margin-bottom: 1em;">
+            <a href="#top">Back to top &uarr;</a>
+        </div>
         <div class="footer">
             <p class="footer-left">
                 © 2023 Created by <a href="http://axeldonath.com">Axel Donath </a>
