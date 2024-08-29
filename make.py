@@ -187,12 +187,12 @@ def generate_blog_entries(overwrite=True):
                     "toc",
                 ],
             )
-
             date = content.metadata.get("date", "Date missing").replace("'", "")
 
             value = readtime.of_html(content)
 
             content_html = template_blog.render(
+                toc=content.toc_html,
                 date=date,
                 readtime=value,
                 content=content,
