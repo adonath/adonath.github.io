@@ -44,7 +44,7 @@
                 {% endif %}
             </p>
             <p class="menu-blog-center">
-                <a href="../../blog.html"> Archive </a>
+                <a href="../../blog.html"> Back to Archive </a>
             </p>
             <p class="menu-blog-right">
                 {% if next_page %}
@@ -56,17 +56,20 @@
             <p class="blog-text-header-left">
                 {{ date }}
             </p>
-            <details class="blog-text-header-center">
-                <summary>Table of Contents</summary>
-                <div class="toc-content" style="text-align: left;">
-                    {{ toc }}
-                </div>
-            </details>
             <p class="blog-text-header-right">
                 {{ readtime }}
             </p>
+            <div class="blog-text-header-center">
+                <details>
+                    <summary>Table of Contents</summary>
+                    <div class="blog-toc-content">
+                        {{ toc }}
+                    </div>
+                </details>
+            </div>
         </div>
         <div class="text">
+            <h1>{{ title }}</h1>
             {{ content }}
         </div>
         <div style="text-align:center;margin-bottom: 1em;">

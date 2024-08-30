@@ -191,8 +191,11 @@ def generate_blog_entries(overwrite=True):
 
             value = readtime.of_html(content)
 
+            title = content.metadata.get("title", "Title missing").replace("'", "")
+
             content_html = template_blog.render(
-                toc=content.toc_html,
+                title=title,
+                toc=content.toc_html.replace("ul>", 'ol type="1">'),
                 date=date,
                 readtime=value,
                 content=content,
@@ -213,9 +216,7 @@ def generate_blog_entries(overwrite=True):
         entries.append(
             {
                 "date": date,
-                "title": content.metadata.get("title", "Title missing").replace(
-                    "'", ""
-                ),
+                "title": title,
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
                 "readtime": value.text,
