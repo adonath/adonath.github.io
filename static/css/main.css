@@ -109,23 +109,28 @@
 
 .blog-text-header-left {
     color: var(--lightgray);
-    width: 15%;
     text-align: left;
     float: left;
+    width: 11ch;
 }
 
 .blog-text-header-center {
     color: var(--lightgray);
-    width: 70%;
     text-align: center;
-    float: left;
+    width: calc(100% - 22ch);
+    margin: 0 auto;
 }
 
 .blog-text-header-right {
     color: var(--lightgray);
-    width: 15%;
     text-align: right;
-    float: left;
+    float: right;
+    width: 11ch;
+}
+
+.blog-toc-content {
+    margin: 0 auto;
+    text-align: left;
 }
 
 
@@ -339,3 +344,14 @@ strong { font-weight: bold; }
 .codehilite {
     margin-top: 1em;
   }
+
+ol {
+    counter-reset: item
+    }
+li {
+    display: block
+    }
+li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+    }
