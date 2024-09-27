@@ -33,6 +33,7 @@ Jolideco is a **new method for joint deconvolution of astronomical images in the
 
 
 
+
 ### Validation of Standardized Data Formats and Tools for Ground-level Particle-based Gamma-ray Observatories (2022)
 __________________________________
 <img class="image-research" src="static/images/gammapy-hawc-paper.jpg"/>
