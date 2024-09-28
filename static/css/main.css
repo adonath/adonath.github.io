@@ -197,6 +197,33 @@
     color: var(--gray);
 }
 
+@media (min-width:320px)  {
+    .image-research {
+        margin: auto;
+        width:256px;
+    }
+
+    .image-software {
+        margin: auto;
+        width:128px;
+    }
+}
+
+@media (min-width:600px)  {
+    .image-research {
+        float:left;
+        width:256px;
+        margin:0.8em;
+    }
+
+    .image-software {
+        float:left;
+        width:128px;
+        margin:0.8em;
+    }
+}
+
+
 img{
     max-width:100%;
     display: block;

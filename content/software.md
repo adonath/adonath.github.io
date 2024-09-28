@@ -1,7 +1,6 @@
 ## Gammapy
 _________________________
-
-<img src="static/images/gammapy-logo.png" alt="drawing" style="float:left;width:128px;height:128px;"/>
+<img class="image-software" src="static/images/gammapy-logo.png"/>
 
 I am lead developer of a project called *Gammapy*. *Gammapy* is an **open source Python package for gamma-ray astronomy**. It supports the analysis of data from Imaging Atmospheric Cherenkov Telescopes, such as [CTA](https://www.cta-observatory.org), [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/)
 [MAGIC](https://magic.mpp.mpg.de/) and [VERITAS](https://veritas.sao.arizona.edu/), but also from all-sky instruments such as [Fermi-LAT](https://fermi.gsfc.nasa.gov/) and [HAWC](https://www.hawc-observatory.org/). It also allows users to combine data from all those
@@ -16,7 +15,7 @@ The project was started by my PhD supervisor [Christoph Deil](https://christophd
 
 ## Jolideco
 _________________________
-<img src="static/images/jolideco-logo.png" alt="drawing" style="float:left;width:196px;margin:8px"/>
+<img class="image-software" src="static/images/jolideco-logo.png"style="width:196px"/>
 
 *Jolideco* is a **Python package for joint deconvolution of astronomical images in the presence of Poisson noise**. It allows to reconstruct a single image from multiple observations of different instruments with different point spread functions and exposure times. For the reconstruction it uses a maximum a posteriori (MAP) estimate of the joint Poisson likelihood of all observations under a patch based image prior. The image prior is learned from astronomical images at other wavelengths, such as images from the James Webb Space Telescope (JWST) or GLEAM radio survey. The package is implemented 
 based on [Pytorch](https://pytorch.org) and features a clean and extensible API. It is the first package to offer a joint deconvolution and reconstruction of images for the x-ray and gamma-ray domain.
@@ -27,7 +26,7 @@ based on [Pytorch](https://pytorch.org) and features a clean and extensible API.
 
 ## Pylira
 _________________________
-<img src="static/images/pylira-logo.png" alt="drawing" style="float:left;width:128px;"/>
+<img  class="image-software" src="static/images/pylira-logo.png"/>
 
 *Pylira* is a **Python package for deconvolution of astronomical images in the presence of Poisson noise**.
 It is based on a Bayesian statistical approach and allows to sample images from the posterior distribution under a hierarchical multiscale prior. The sampling approach allows astronomers to measure uncertainties of the reconstructed image along with the posterior mean. The package itself is mostly a Python wrapper around an existing R implementation based on [*pybind11*](https://pybind11.readthedocs.io). On top it offers convenience functionality to serialise and visualise the results and check for their validity.
