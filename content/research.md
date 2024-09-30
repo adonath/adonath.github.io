@@ -18,7 +18,8 @@ _____________________________________________________
 
 Gammapy is a Python package for Gamma-ray astronomy. In the paper we describe the **overall idea and design of Gammapy and give an overview of the functionality and API**. We also present many analysis examples on public datasets. Including the analysis of the Galactic center region with simulated CTA data, time based analysis of MK 421 using H.E.S.S. data, the Crab nebula with Fermi-LAT data. We also demonstrate how to combine data from different instruments, such as H.E.S.S. and Fermi-LAT to improve the scientific results. The paper was published in Astronomy & Astrophysics in 2023 and selected as an A&A Editors Highlight. The paper serves as the main reference for the Gammapy software package.
 
-**Links:** [Paper](https://www.aanda.org/articles/aa/full_html/2023/10/aa46488-23/aa46488-23.html) | [A&A Editors Highlight](https://www.aanda.org/2023-highlights/2907) | [Paper Source Repository](https://github.com/gammapy/gammapy-v1.0-paper)
+**Links:** [Paper](https://www.aanda.org/articles/aa/full_html/2023/10/aa46488-23/aa46488-23.html) | [A&A Editors Highlight](https://www.aanda.org/2023-highlights/2907) | [Paper Source Repository](https://github.com/gammapy/gammapy-v1.0-paper) | [Software](http://axeldonath.com/software.html#Gammapy)
+
 
 
 
@@ -28,7 +29,7 @@ ________________________________________________________________________________
 
 Jolideco is a **new method for joint deconvolution of astronomical images in the presence of Poisson noise**. It allows to reconstruct a single image from multiple observations of different instruments with different point spread functions and exposure times. For the reconstruction it uses a maximum a posteriori (MAP) estimate of the joint Poisson likelihood of all observations under a patch based image prior. The image prior is learned from astronomical images at other wavelengths, such as images from the James Webb Space Telescope (JWST) or GLEAM radio survey. In the paper we introduce the method and demonstrate its performance on simulated datasets. We show that the method results in a significant improvement in the reconstruction quality compared to other state-of-the-art methods. Most importantly Jolideco also allows science users to combine data from different instruments which further improves the reconstruction quality. In the paper we demostrate the method on example datasets of the SNR E0102 from the Chandra X-ray Observatory and Fermi-LAT data of the region around Vela Junior.
 
-**Links:** [Paper](https://iopscience.iop.org/article/10.3847/1538-3881/ad6b98) | [Paper Source Repository](https://github.com/jolideco/jolideco-paper)
+**Links:** [Paper](https://iopscience.iop.org/article/10.3847/1538-3881/ad6b98) | [Paper Source Repository](https://github.com/jolideco/jolideco-paper) | [Software](http://axeldonath.com/software.html#Jolideco)
 
 
 

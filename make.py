@@ -85,7 +85,7 @@ def generate(overwrite):
 
         with filename_output.open("w") as output_file:
             log.info(f"Reading {filename}")
-            content = markdown(filename.read_text())
+            content = markdown(filename.read_text(), extras=["header-ids"])
 
             content_html = template.render(
                 content=content,
@@ -180,7 +180,12 @@ def generate_blog_entries(overwrite=True):
             log.info(f"Reading {filename}")
             content = markdown(
                 filename.read_text(),
-                extras=["fenced-code-blocks", "code-friendly", "metadata", "toc"],
+                extras=[
+                    "fenced-code-blocks",
+                    "code-friendly",
+                    "metadata",
+                    "toc",
+                ],
             )
 
             date = content.metadata.get("date", "Date missing").replace("'", "")
