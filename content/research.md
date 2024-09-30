@@ -28,7 +28,7 @@ ________________________________________________________________________________
 
 Jolideco is a **new method for joint deconvolution of astronomical images in the presence of Poisson noise**. It allows to reconstruct a single image from multiple observations of different instruments with different point spread functions and exposure times. For the reconstruction it uses a maximum a posteriori (MAP) estimate of the joint Poisson likelihood of all observations under a patch based image prior. The image prior is learned from astronomical images at other wavelengths, such as images from the James Webb Space Telescope (JWST) or GLEAM radio survey. In the paper we introduce the method and demonstrate its performance on simulated datasets. We show that the method results in a significant improvement in the reconstruction quality compared to other state-of-the-art methods. Most importantly Jolideco also allows science users to combine data from different instruments which further improves the reconstruction quality. In the paper we demostrate the method on example datasets of the SNR E0102 from the Chandra X-ray Observatory and Fermi-LAT data of the region around Vela Junior.
 
-**Links:** [Paper]() | [Paper Source Repository](https://github.com/jolideco/jolideco-paper)
+**Links:** [Paper](https://iopscience.iop.org/article/10.3847/1538-3881/ad6b98) | [Paper Source Repository](https://github.com/jolideco/jolideco-paper)
 
 
 
