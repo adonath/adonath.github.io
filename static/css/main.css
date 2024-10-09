@@ -133,6 +133,19 @@
     text-align: left;
 }
 
+.blog-toc-content ol {
+    counter-reset: item
+    }
+
+.blog-toc-content li {
+    display: block
+}
+
+.blog-toc-content li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+    }
+
 
 .text {
     margin: 0em;
@@ -256,7 +269,7 @@ img{
 }
 
 body {
-    font: normal 14px/1.75em Avenir, Montserrat, sans-serif;
+    font: normal 14px/1.75em futura-pt, Avenir, Montserrat, sans-serif;
     font-weight: 100;
     color: var(--darkgray);
     /* text-align: justify; */
@@ -345,13 +358,3 @@ strong { font-weight: bold; }
     margin-top: 1em;
   }
 
-ol {
-    counter-reset: item
-    }
-li {
-    display: block
-    }
-li:before {
-    content: counters(item, ".") " ";
-    counter-increment: item
-    }
