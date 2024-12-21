@@ -24,6 +24,20 @@ based on [Pytorch](https://pytorch.org) and features a clean and extensible API.
 [Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Arxiv](https://arxiv.org/abs/2403.13933) | [AstroAI Talk 2024](https://www.youtube.com/watch?v=m9IkPz5HrK4)
 
 
+
+## GMMX
+_________________________
+<img class="image-software" src="static/images/gmmx-logo.png"style="width:196px"/>
+
+*GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in Jax**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. 
+Thanks to [Jax](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
+on large datasets witrh around 50x better performance than Scikit-Learn. The package is designed to be easily extensible and can be used as a drop-in replacement for Scikit-Learn's GMM implementation.
+
+
+**Links:**
+[Docs](https://adonath.github.io/gmmx/) | [GitHub](https://github.com/adonath/gmmx)
+
+
 ## Pylira
 _________________________
 <img  class="image-software" src="static/images/pylira-logo.png"/>
