@@ -210,8 +210,9 @@ def generate_blog_entries(overwrite=True):
 
             output_file.write(content_html)
 
-        for filename_image in filename.parent.glob("*.png"):
-            shutil.copy(filename_image, filename_output.parent / filename_image.name)
+        src = filename.parent / (filename.stem + "_files")
+        dst = filename_output.parent /  (filename.stem + "_files")
+        shutil.copytree(src, dst, dirs_exist_ok=True)
 
         entries.append(
             {
@@ -220,7 +221,7 @@ def generate_blog_entries(overwrite=True):
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
                 "readtime": value.text,
-                "thumbnail": f"static/images/lissajous-{idx}.jpg",
+                "thumbnail": f"static/images/blog-thumbnails/thumbnail-{idx}.png",
             }
         )
 

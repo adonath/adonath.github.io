@@ -161,19 +161,21 @@
     opacity: 1.0;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 1em;
     border-left: solid 2px var(--white);
+    min-height: calc(128px + 2em);
 }
 
 .blog-entry-index:hover {
     opacity: 1.0;
     border-left: solid 2px var(--darkorange);
-    /* background-color: rgb(238, 105, 37, 0.1); */
+    background-color: rgba(127, 127, 127, 0.1);
 }
 
 .blog-entry-index-thumbnail {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 128px;
+    height: 128px;
     margin-right: 1em;
 }
 
