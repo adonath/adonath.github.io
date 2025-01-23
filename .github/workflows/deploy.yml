@@ -44,7 +44,7 @@ jobs:
         run: |
           python make.py generate --overwrite
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: './site'
       - name: Deploy to GitHub Pages
