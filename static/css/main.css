@@ -37,8 +37,15 @@
     padding-bottom: 1em;
 }
 
+.avatar {
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 .social-icons {
-    padding-top: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 
