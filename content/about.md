@@ -1,10 +1,24 @@
-I am a Postdoc researcher and research software developer at the [Center for Astrophysics | Harvard & Smithsonian](https://www.cfa.harvard.edu) in Cambridge MA, where I research in the field of advanced statistical methods for X-ray and gamma-ray astronomy. Previously (until 2020) I have worked at the [Max Planck Institute for Nuclear Physics](https://www.mpi-hd.mpg.de/mpi/de/) in Heidelberg, where I also did my PhD.
+Welcome to my personal website!
 
-- My main interest is in advanced data analysis methods for counts based data with low statistics. This includes maximum likelihood based spectro-morphological modelling of gamma-ray data, with handling of time and spatially dependent instrument response and combining data from multiple gamma-ray instruments.
+I'm a Posdoctoral researcher at the [Center for Astrophysics](https://www.cfa.harvard.edu) in Cambridge, MA.
+Previously I have worked at the [Max Planck Institute for Nuclear Physics](https://www.mpi-hd.mpg.de/mpi/de/) in Heidelberg, where I also did my PhD.
 
-- I am interested in open source software development and reproducible, open science.
+I develop new AI, machine learning and statistical methods as well as scientific open source software for the analysis
+of astronomical low counts data. I apply those methods to better understand the Galactic
+X-Ray and Gamma-Ray source populations.
 
-- I am interested in the global structure of the Milky-Way in GeV-TeV gamma-rays and the Galactic gamma-ray source population. This includes association and classification of TeV gamma-ray sources in context of source catalog production as well as separation of sources from interstellar diffuse gamma-ray emission.
+I'm also interested in developing new methods and open data formats to combine data
+from multiple instruments, such as the
+[Cherenkov Telescope Array Observatory (CTAO)](https://www.cta-observatory.org),
+[H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/), [HAWC](https://www.hawc-observatory.org)
+and [Fermi-LAT](https://fermi.gsfc.nasa.gov) but also X-ray observatories such as
+[Chandra](https://chandra.harvard.edu). By advocating openness I hope to
+facilitate collaboration between astronomical observatories for better,
+more open and reproducible science.
 
+I'm the lead developer of the open source software package [Gammapy](https://gammapy.org),
+sub-package maintainer of [Astropy](https://astropy.org) and a member of the
+[CHASC astro-statistics collaboration](https://hea-www.harvard.edu/astrostat/).
+I'm also editor for the Astronomy and Astrophysics track of the Journal of Open Source Software [JOSS](https://joss.theoj.org).
 
 Here you can find my complete [CV for download](https://github.com/adonath/adonath-cv/raw/build/adonath-cv.pdf).

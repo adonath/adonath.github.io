@@ -25,9 +25,9 @@ SERVER_ADDRESS = (IP, PORT)
 URL = f"http://{IP}:{PORT}"
 
 NAVBAR_ITEMS = {
-    "home": "index",
-    "about": "about",
+    "about": "index",
     "research": "research",
+    "teaching": "teaching",
     "software": "software",
     "blog": "blog",
     "contact": "contact",
@@ -77,7 +77,7 @@ def generate(overwrite):
         navbar_items.append(item)
 
     for filename in filenames:
-        name = "index" if filename.stem == "home" else filename.stem
+        name = "index" if filename.stem == "about" else filename.stem
 
         filename_output = PATH_OUTPUT / f"{name}.html"
 
