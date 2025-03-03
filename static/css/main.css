@@ -246,26 +246,26 @@
 @media (min-width:320px)  {
     .image-research {
         margin: auto;
-        width:256px;
+        width: 196px;
     }
 
     .image-software {
         margin: auto;
-        width:128px;
+        width: 196px;
     }
 }
 
 @media (min-width:600px)  {
     .image-research {
-        float:left;
-        width:256px;
-        margin:0.5em;
+        float: left;
+        width: 196px;
+        margin: 0.5em;
     }
 
     .image-software {
-        float:left;
-        width:128px;
-        margin:0.5em;
+        float: left;
+        width: 196px;
+        margin: 0.5em;
     }
 }
 

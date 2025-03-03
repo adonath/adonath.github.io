@@ -13,7 +13,7 @@ instruments to improve their scientific results. The project was started by my P
 
 ## Jolideco
 _________________________
-<img class="image-software" src="static/images/jolideco-logo.png"style="width:196px"/>
+<img class="image-software" src="static/images/jolideco-logo.png"/>
 
 *Jolideco* is a **Python package for joint deconvolution of astronomical images in the presence of Poisson noise**. It allows to reconstruct a single image from multiple observations of different instruments with different point spread functions and exposure times. For the reconstruction it uses a maximum a posteriori (MAP) estimate of the joint Poisson likelihood of all observations under a patch based image prior. The image prior is learned from astronomical images at other wavelengths, such as images from the James Webb Space Telescope (JWST) or GLEAM radio survey. The package is implemented 
 based on [Pytorch](https://pytorch.org) and features a clean and extensible API. It is the first package to offer a joint deconvolution and reconstruction of images for the x-ray and gamma-ray domain.
@@ -25,7 +25,7 @@ based on [Pytorch](https://pytorch.org) and features a clean and extensible API.
 
 ## GMMX
 _________________________
-<img class="image-software" src="static/images/gmmx-logo.png"style="width:196px"/>
+<img class="image-software" src="static/images/gmmx-logo.png"/>
 
 *GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in Jax**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. 
 Thanks to [Jax](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
