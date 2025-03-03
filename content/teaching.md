@@ -1,4 +1,4 @@
-## Astronomy Software
+## Astronomy Software Tutorials
 __________________________
 In the past I have given tutorials on the usage of some of the software I co-developed. Some of them you can find below:
 
@@ -7,7 +7,9 @@ In the past I have given tutorials on the usage of some of the software I co-dev
 __________________________________
 <img  class="image-software" src="https://img.youtube.com/vi/gsAI0TDV5B0/0.jpg"/>
 
-A tutorial aimed at beginners to the field of gamma-ray astronomy. It covers the basics of gamma-ray data analysis, including how to use [Gammapy](https://gammapy.org) to analyze data from the Fermi-LAT and H.E.S.S. telescopes.
+This tutorial is aimed at beginners to the field of gamma-ray astronomy. The tutorial was given as part of the [ESCAPE summer school 2021](https://escape2020.github.io/school2021/). 
+It uses the [Gammapy](https://gammapy.org) package to demonstrate the analysis of data from the Cherenkov Telescope Array Observatory (CTAO). It covers the basics of gamma-ray
+data analysis, including creating and filtering of event lists, image and spectral analysis of binned counts data, model fitting and computation of significance maps and flux points. 
 
 **Links:**
 [Youtube](https://www.youtube.com/watch?v=gsAI0TDV5B0) | [Webpage](https://escape2020.github.io/school2021/posts/clase19/) | [GitHub](https://github.com/escape2020/school2021/tree/main/gammapy)
@@ -18,7 +20,9 @@ A tutorial aimed at beginners to the field of gamma-ray astronomy. It covers the
 __________________________________
 <img  class="image-software" src="https://img.youtube.com/vi/uzhQ6RIGHQA/0.jpg"/>
 
-A tutorial for beginners in [Astropy](https://www.astropy.org). It teaches the fundementals of the Astropy package, including coordinates, time, units, tables and FITS serialization.
+A beginner tutorial on the usage of the [Astropy](https://www.astropy.org) package. The tutorial was given as part of the [ESCAPE summer school 2021](https://escape2020.github.io/school2021/).
+It covers the basics of the Astropy package, including coordinate and time handling and conversion, quantities and units, table data structures and FITS serialization as well as coordinate
+aware plotting and visualization of astronomical images.
 
 **Links:**
 [Youtube](https://www.youtube.com/watch?v=uzhQ6RIGHQA) | [Webpage](https://escape2020.github.io/school2021/posts/clase16/) | [GitHub](https://github.com/escape2020/school2021/tree/main/astropy)
