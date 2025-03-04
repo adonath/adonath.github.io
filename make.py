@@ -158,12 +158,21 @@ def get_previous_page(filenames, idx):
     return "../" + get_filename_output(filenames[idx - 1])
 
 
+def get_date_from_md(filename):
+    """Get date from markdown file"""
+    with filename.open("r") as f:
+        text = f.read()
+        html = markdown(text, extras=['metadata'])
+
+    return datetime.strptime(html.metadata["date"], "'%Y-%m-%d'")
+
+
 def generate_blog_entries(overwrite=True):
     """Generate blog entries"""
     filenames = list((PATH / "content" / "blog").glob("**/*.md"))
 
     filenames.sort(
-        key=lambda x: datetime.strptime(x.parent.stem, "%Y-%m-%d"),
+        key=get_date_from_md,
         reverse=True,
     )
 
