@@ -489,7 +489,7 @@ You might have already noticed that my avatar at the top of the webpage was crea
 <br>
 <div align="center">
 <a href="https://raw.githubusercontent.com/adonath/blog.adonath.github.io/main/intro-to-gamma-ray-data.tar.gz"><b>Download the notebook bundle</b></a> |
-<a href="https://github.com/adonath/blog.adonath.github.io/discussions/1"><b>Join the Discussion</b></a>
+<a href="https://github.com/adonath/blog.adonath.github.io/discussions/1"><b>Join the discussion</b></a>
 </div>
 <br>
 _________________________

@@ -13,8 +13,8 @@
     margin-left: auto;
     max-width: 800px;
     background: var(--white);
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 6em;
+    padding-right: 6em;
     height: 100vh;
     overflow-y: auto;
     /* box-shadow: 0 0 3px 0px white; */
