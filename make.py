@@ -195,6 +195,7 @@ def generate_blog_entries(overwrite=True):
                     "metadata",
                     "toc",
                     "admonitions",
+                    "codehilite",
                 ],
             )
             date = content.metadata.get("date", "Date missing").replace("'", "")
