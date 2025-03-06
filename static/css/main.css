@@ -243,6 +243,18 @@
     color: var(--gray);
 }
 
+.admonition {
+    background: #2898710c;
+    color: #737373;
+    border-left: 10px solid #289870;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+.admonition strong {
+    color: #289870;
+}
+
 @media (min-width:320px)  {
     .image-research {
         margin: auto;
