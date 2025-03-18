@@ -207,11 +207,13 @@ def generate_blog_entries(overwrite=True):
             title = content.metadata.get("title", "Title missing").replace("'", "")
 
             thumbnail = f"static/images/blog-thumbnails/thumbnail-{idx}.png"
+            summary = content.metadata.get("summary", "Summary missing")
             content_html = template_blog.render(
                 title=title,
                 toc=content.toc_html.replace("ul>", 'ol type="1">'),
                 url=URL_PAGE + "/" + str(filename_output.relative_to(PATH_OUTPUT)),
                 thumbnail=URL_PAGE + "/" + thumbnail,
+                description=summary,
                 date=date,
                 readtime=value,
                 content=content,
@@ -235,7 +237,7 @@ def generate_blog_entries(overwrite=True):
                 "date": date,
                 "title": title,
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
-                "summary": content.metadata.get("summary", "Summary missing"),
+                "summary": summary,
                 "readtime": value.text,
                 "thumbnail": thumbnail,
             }
