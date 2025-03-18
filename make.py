@@ -211,7 +211,7 @@ def generate_blog_entries(overwrite=True):
                 title=title,
                 toc=content.toc_html.replace("ul>", 'ol type="1">'),
                 url=URL_PAGE + "/" + str(filename_output.relative_to(PATH_OUTPUT)),
-                thumbnail=thumbnail,
+                thumbnail=URL_PAGE + "/" + thumbnail,
                 date=date,
                 readtime=value,
                 content=content,
