@@ -33,6 +33,8 @@ NAVBAR_ITEMS = {
     "contact": "contact",
 }
 
+URL_PAGE = "https://axeldonath.com"
+
 loader = FileSystemLoader(searchpath="./templates")
 TEMPLATE_ENV = Environment(loader=loader)
 
@@ -204,9 +206,12 @@ def generate_blog_entries(overwrite=True):
 
             title = content.metadata.get("title", "Title missing").replace("'", "")
 
+            thumbnail = f"static/images/blog-thumbnails/thumbnail-{idx}.png"
             content_html = template_blog.render(
                 title=title,
                 toc=content.toc_html.replace("ul>", 'ol type="1">'),
+                url=URL_PAGE + "/" + str(filename_output.relative_to(PATH_OUTPUT)),
+                thumbnail=thumbnail,
                 date=date,
                 readtime=value,
                 content=content,
@@ -232,7 +237,7 @@ def generate_blog_entries(overwrite=True):
                 "href": f"{filename_output.relative_to(PATH_OUTPUT)}",
                 "summary": content.metadata.get("summary", "Summary missing"),
                 "readtime": value.text,
-                "thumbnail": f"static/images/blog-thumbnails/thumbnail-{idx}.png",
+                "thumbnail": thumbnail,
             }
         )
 
