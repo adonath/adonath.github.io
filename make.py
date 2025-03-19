@@ -206,7 +206,7 @@ def generate_blog_entries(overwrite=True):
 
             title = content.metadata.get("title", "Title missing").replace("'", "")
 
-            thumbnail = f"static/images/blog-thumbnails/thumbnail-{idx}.png"
+            thumbnail = f"static/images/blog-thumbnails/thumbnail-{idx}.jpg"
             summary = content.metadata.get("summary", "Summary missing")
             content_html = template_blog.render(
                 title=title,
