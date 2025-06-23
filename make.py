@@ -175,7 +175,7 @@ def generate_blog_entries(overwrite=True):
 
     filenames.sort(
         key=get_date_from_md,
-        reverse=True,
+        reverse=False,
     )
 
     template_blog = TEMPLATE_ENV.get_template("blog.html")
@@ -229,8 +229,10 @@ def generate_blog_entries(overwrite=True):
             output_file.write(content_html)
 
         src = filename.parent / (filename.stem + "_files")
-        dst = filename_output.parent /  (filename.stem + "_files")
-        shutil.copytree(src, dst, dirs_exist_ok=True)
+
+        if src.exists():
+            dst = filename_output.parent /  (filename.stem + "_files")
+            shutil.copytree(src, dst, dirs_exist_ok=True)
 
         entries.append(
             {
@@ -243,7 +245,7 @@ def generate_blog_entries(overwrite=True):
             }
         )
 
-    return entries
+    return entries[::-1]
 
 
 @cli.command("clean")
