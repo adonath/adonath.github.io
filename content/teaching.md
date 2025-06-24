@@ -34,3 +34,5 @@ __________________________
 
 I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](
 https://github.com/adonath/scipy-2023-pydantic-tutorial)
+
+Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
