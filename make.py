@@ -1,4 +1,5 @@
 import logging
+import os
 import shutil
 import time
 import webbrowser
@@ -10,6 +11,7 @@ from threading import Thread
 
 import click
 import readtime
+import requests
 from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 
@@ -34,6 +36,7 @@ NAVBAR_ITEMS = {
 }
 
 URL_PAGE = "https://axeldonath.com"
+GITHUB_REPO = "adonath/adonath.github.io"
 
 loader = FileSystemLoader(searchpath="./templates")
 TEMPLATE_ENV = Environment(loader=loader)
@@ -274,6 +277,32 @@ def serve():
         httpd.serve_forever()
     except KeyboardInterrupt:
         pass
+
+
+@cli.command("publish")
+def publish():
+    """Trigger GitHub Actions deploy workflow via workflow_dispatch API"""
+    workflow_id = "deploy.yml"
+    github_token = os.environ.get("GITHUB_TOKEN")
+    
+    if not github_token:
+        log.error("GITHUB_TOKEN environment variable not set.")
+        return
+
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/actions/workflows/{workflow_id}/dispatches"
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {github_token}",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    data = {"ref": "main"}  # Change 'main' if your default branch is different
+
+    response = requests.post(url, headers=headers, json=data)
+    
+    if response.status_code == 204:
+        log.info("Deploy workflow triggered successfully.")
+    else:
+        log.error(f"Failed to trigger workflow: {response.status_code} {response.text}")
 
 
 if __name__ == "__main__":
