@@ -41,6 +41,21 @@ GITHUB_REPO = "adonath/adonath.github.io"
 loader = FileSystemLoader(searchpath="./templates")
 TEMPLATE_ENV = Environment(loader=loader)
 
+CITATION_TEMPLATE = """## Citation
+Please cite this article as:
+
+```bibtex
+@article{{Donath{year}{month}{day},
+  title = {{{title}}},
+  author = {{Donath, Axel}},
+  journal = {{axeldonath.com/blog}},
+  year = {{{year}}},
+  month = {{{month}}},
+  url = "{url}"
+}}
+```
+"""
+
 
 def copy_static_files(overwrite):
     """Copy static files"""
@@ -204,22 +219,37 @@ def generate_blog_entries(overwrite=True):
                 ],
             )
             date = content.metadata.get("date", "Date missing").replace("'", "")
-
             value = readtime.of_html(content)
-
             title = content.metadata.get("title", "Title missing").replace("'", "")
-
             thumbnail = f"static/images/blog-thumbnails/thumbnail-{idx}.jpg"
             summary = content.metadata.get("summary", "Summary missing")
+            url = URL_PAGE + "/" + str(filename_output.relative_to(PATH_OUTPUT))
+
+            year, month, day = date.split("-")
+            content_citation = markdown(
+                CITATION_TEMPLATE.format(
+                    year=year,
+                    title=title,
+                    day=day,
+                    url=url,
+                    month=datetime(int(year), int(month), int(day)).strftime("%b"),
+                ),
+                extras=[
+                    "fenced-code-blocks",
+                    "code-friendly",
+                    "codehilite",
+                ],
+            )
+
             content_html = template_blog.render(
                 title=title,
                 toc=content.toc_html.replace("ul>", 'ol type="1">'),
-                url=URL_PAGE + "/" + str(filename_output.relative_to(PATH_OUTPUT)),
+                url=url,
                 thumbnail=URL_PAGE + "/" + thumbnail,
                 description=summary,
                 date=date,
                 readtime=value,
-                content=content,
+                content=content + content_citation,
                 next_page=get_next_page(filenames, idx),
                 previous_page=get_previous_page(filenames, idx),
             )
@@ -284,7 +314,7 @@ def publish():
     """Trigger GitHub Actions deploy workflow via workflow_dispatch API"""
     workflow_id = "deploy.yml"
     github_token = os.environ.get("GITHUB_TOKEN")
-    
+
     if not github_token:
         log.error("GITHUB_TOKEN environment variable not set.")
         return
@@ -298,7 +328,7 @@ def publish():
     data = {"ref": "main"}  # Change 'main' if your default branch is different
 
     response = requests.post(url, headers=headers, json=data)
-    
+
     if response.status_code == 204:
         log.info("Deploy workflow triggered successfully.")
     else:
