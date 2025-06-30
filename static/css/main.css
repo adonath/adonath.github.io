@@ -375,7 +375,15 @@ blockquote {
 
 strong { font-weight: bold; }
 
+figcaption {
+    margin-top: 1em;
+    color: var(--lightgray);
+    text-align: center;
+}
+
 .codehilite {
     margin-top: 1em;
   }
+
+
 
