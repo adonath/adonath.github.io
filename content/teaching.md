@@ -3,14 +3,17 @@ ____________________
 
 ### Pydantic @ Scipy 2023
 __________________________
-I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](https://github.com/adonath/scipy-2023-pydantic-tutorial)
+I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/) together with [Nick Langellier](https://www.linkedin.com/in/nick-langellier/). We introduced the basics of Pydantic and demonstrated how to use it in example applications.
+
+**Links:**
+[GitHub](https://github.com/adonath/scipy-2023-pydantic-tutorial) | [Webpage](https://axeldonath.com/scipy-2023-pydantic-tutorial/)
 
 
 ### Fundamentals of Diffusion Model in JAX @ Pydata Boston 2025
 ________________________________________________________________
 <img  class="image-software" src="https://raw.githubusercontent.com/adonath/jax-diffusion-models-pydata-boston-2025/main/images/ddpm-swiss-roll-animation.gif"/>
 
-Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
+Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. At this tutorial I introduced the fundamentals of diffusion models, including Langevin sampling and score matching. I showed the analogies of diffusion models to their physical processes. At the same time I introduced the fundamentals of [JAX](https://docs.jax.dev/en/latest/index.html), such as device bound arrays, function transforms and PyTrees.
 
 **Links:**
 [Youtube](https://www.youtube.com/watch?v=PTkXH3wHhmQ) | [Webpage](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/) | [GitHub](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025)
