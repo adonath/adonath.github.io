@@ -1,7 +1,25 @@
-## Astronomy Software Tutorials
-__________________________
-In the past I have given tutorials on the usage of some of the software I co-developed. Some of them you can find below:
+## General Tutorials
+____________________
 
+### Pydantic @ Scipy 2023
+-------------------------
+I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](
+https://github.com/adonath/scipy-2023-pydantic-tutorial)
+
+
+### Fundamentals of Diffusion Model in JAX @ Pydata Boston 2025
+---------------------------------------------------------------
+<img  class="image-software" src="https://raw.githubusercontent.com/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/images/ddpm-swiss-roll-animation.gif"/>
+
+Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
+
+**Links:**
+[Youtube](https://www.youtube.com/watch?v=PTkXH3wHhmQ) | [Webpage](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/) | [GitHub](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025)
+
+
+## Astronomy Software
+---------------------
+In the past I have given tutorials on the usage of some of the software I co-developed. Some of them you can find below:
 
 ### Gammapy: Escape Summer School 2021
 __________________________________
@@ -26,13 +44,3 @@ aware plotting and visualization of astronomical images.
 
 **Links:**
 [Youtube](https://www.youtube.com/watch?v=uzhQ6RIGHQA) | [Webpage](https://escape2020.github.io/school2021/posts/clase16/) | [GitHub](https://github.com/escape2020/school2021/tree/main/astropy)
-
-
-## Other
-__________________________
-
-
-I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](
-https://github.com/adonath/scipy-2023-pydantic-tutorial)
-
-Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
