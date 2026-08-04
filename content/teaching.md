@@ -19,9 +19,11 @@ Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com
 [Youtube](https://www.youtube.com/watch?v=PTkXH3wHhmQ) | [Webpage](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/) | [GitHub](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025)
 
 
+
 ## Astronomy Software
 _____________________
 In the past I have given tutorials on the usage of some of the software I co-developed. Some of them you can find below:
+
 
 ### Gammapy: Escape Summer School 2021
 __________________________________
