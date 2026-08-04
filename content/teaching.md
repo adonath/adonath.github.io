@@ -9,7 +9,7 @@ https://github.com/adonath/scipy-2023-pydantic-tutorial)
 
 ### Fundamentals of Diffusion Model in JAX @ Pydata Boston 2025
 ---------------------------------------------------------------
-<img  class="image-software" src="https://raw.githubusercontent.com/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/images/ddpm-swiss-roll-animation.gif"/>
+<img  class="image-software" src="https://raw.githubusercontent.com/adonath/jax-diffusion-models-pydata-boston-2025/main/images/ddpm-swiss-roll-animation.gif"/>
 
 Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
 
