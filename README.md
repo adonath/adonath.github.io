@@ -3,40 +3,28 @@
 [![Website](https://img.shields.io/badge/visit-website-blue.svg)](https://axeldonath.com)
 
 The webpage uses a minimal static site generator based on [Jinja2](https://jinja.palletsprojects.com/) and [Markdown2](https://daringfireball.net/projects/markdown/).
-The setup was loosely inspired by [PrettyPrinted](https://github.com/PrettyPrinted/youtube_video_code/tree/master/2019/12/16/Building%20a%20Simple%20Static%20Site%20Generator%20in%20Python). To generate the site follow these steps:
+The setup was loosely inspired by [PrettyPrinted](https://github.com/PrettyPrinted/youtube_video_code/tree/master/2019/12/16/Building%20a%20Simple%20Static%20Site%20Generator%20in%20Python). Dependencies are managed with [uv](https://docs.astral.sh/uv/). To generate the site follow these steps:
 
-First create a new virtual environment:
+First install the dependencies from the lock file (uv creates and manages the virtual environment automatically):
 
-```python3
-python3 -m venv env-adonath-webpage
+```bash
+uv sync
 ```
 
-And activate it:
+Then run the following command to generate the pages:
 
-```python3
-source env-adonath-webpage/bin/activate
-```
-
-Then install the required dependencies stored in the `requirements.txt` file:
-
-```python3
-python -m pip install -r requirements.txt
-```
-
-And run the following command to generate the pages:
-
-```python3
-python make.py generate
+```bash
+uv run make.py generate
 ```
 
 Finally serve the webpage to preview the content:
 
-```python3
-python make.py serve
+```bash
+uv run make.py serve
 ```
 
 If needed clean up the generated files:
 
-```python3
-python make.py clean
+```bash
+uv run make.py clean
 ```
