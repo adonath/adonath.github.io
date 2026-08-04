@@ -2,13 +2,12 @@
 ____________________
 
 ### Pydantic @ Scipy 2023
--------------------------
-I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](
-https://github.com/adonath/scipy-2023-pydantic-tutorial)
+__________________________
+I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/). The tutorial is available on [GitHub](https://github.com/adonath/scipy-2023-pydantic-tutorial)
 
 
 ### Fundamentals of Diffusion Model in JAX @ Pydata Boston 2025
----------------------------------------------------------------
+________________________________________________________________
 <img  class="image-software" src="https://raw.githubusercontent.com/adonath/jax-diffusion-models-pydata-boston-2025/main/images/ddpm-swiss-roll-animation.gif"/>
 
 Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com/adonath/jax-diffusion-models-pydata-boston-2025) at the PyData Boston Meeting in June 2025. 
@@ -18,7 +17,7 @@ Another tutorial on [Fundamentals of Diffusion Models in JAX](https://github.com
 
 
 ## Astronomy Software
----------------------
+_____________________
 In the past I have given tutorials on the usage of some of the software I co-developed. Some of them you can find below:
 
 ### Gammapy: Escape Summer School 2021
