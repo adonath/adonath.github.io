@@ -1,8 +1,40 @@
+## NanoGPTX
+________________
+<img class="image-software" src="https://raw.githubusercontent.com/adonath/nanogptx/main/assets/nanogpt-jax.jpg" alt="Banner"/>
+
+NanoGPTX is a **NanoGPT implementation in pure [JAX](https://docs.jax.dev/)**. It follows best practices of working with JAX and aims for an as clean as possible implementation of a GPT2 style transformer including data preparation and training code for pre-training on known datasets such as Openwebtext.
+It features a hierarchical configuration system, a single entry point command line interface, it uses [Pixi](https://pixi.prefix.dev/latest/) for environment and dependency management, provides abstract evaluation and lazy initialization, minimal data provenance etc. It can be used for educational purposes, or as a clean and hackable starting point for small scale experiments on modified architectures, training strategies or experiments in interpretability
+
+**Links:**
+[GitHub](https://github.com/adonath/nanogptx)
+
+## GMMX
+_________________________
+<img class="image-software" src="static/images/gmmx-logo.png"/>
+
+*GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in Jax**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. 
+Thanks to [Jax](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
+on large datasets. The package is designed to be easily extensible and can be used as a drop-in replacement for Scikit-Learn's GMM implementation.
+
+
+**Links:**
+[Docs](https://adonath.github.io/gmmx/) | [GitHub](https://github.com/adonath/gmmx)
+
+## Clouseau
+_________________________
+<img class="image-software"  src="https://raw.githubusercontent.com/adonath/clouseau/main/docs/_static/clouseau-banner.jpg" alt="Clouseau Banner"/>
+
+Clouseau is a **library independent forward pass inspector for neural nets**. The tool is designed to be used with [PyTorch](https://pytorch.org/) and [Jax](https://docs.jax.dev/) (others libraries might come later...). It allows you to register hooks for the forward pass of a model, and write the forward pass activations to a file for later inspection. It is useful for debugging models or transitioning models from one framework to another and checking their equivalence at any stage. In addition it can also be used as a tool to stream and record activations for work in LLM interpretability. It supports [safetensors](https://huggingface.co/docs/safetensors/index) as a serialization format and some command line utilities to diff and inspect the recorded files.
+
+**Links:**
+[Docs](https://adonath.github.io/clouseau/) | [GitHub](https://github.com/adonath/clouseau)
+
+
 ## Gammapy
 _________________________
 <img class="image-software" src="static/images/gammapy-logo.png"/>
 
-I am lead developer of a project called *Gammapy*. *Gammapy* is an **open source Python package for gamma-ray astronomy**. It supports the analysis of data from Imaging Atmospheric Cherenkov Telescopes, such as [CTA](https://www.cta-observatory.org), [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/)
+I was lead developer of a project called *Gammapy*. *Gammapy* is an **open source Python package for gamma-ray astronomy**. It supports the analysis of data from Imaging Atmospheric Cherenkov Telescopes, such as [CTA](https://www.cta-observatory.org), [H.E.S.S.](https://www.mpi-hd.mpg.de/hfm/HESS/)
 [MAGIC](https://magic.mpp.mpg.de/) and [VERITAS](https://veritas.sao.arizona.edu/), but also from all-sky instruments such as [Fermi-LAT](https://fermi.gsfc.nasa.gov/) and [HAWC](https://www.hawc-observatory.org/). It also allows users to combine data from all those
 instruments to improve their scientific results. The project was started by my PhD supervisor [Christoph Deil](https://christophdeil.com) almost a decade ago. Since then *Gammapy* has accumulated >100 users in the gamma-ray astronomy community and is expected to grow further. In 2020 the project has been selected as the base library for the official Science Tools of the [Cherenkov Telescope Array](https://www.cta-observatory.org). In February 2022 the software was awarded the [Jury Prize of the Open Science Awards](https://www.ouvrirlascience.fr/open-science-free-software-award-ceremony/) at the Open Science European Conference in Paris. In November 2022 we released the first long term support (LTS) version v1.0.
 
@@ -20,20 +52,6 @@ based on [Pytorch](https://pytorch.org) and features a clean and extensible API.
 
 **Links:**
 [Docs](https://jolideco.readthedocs.io/en/latest/) | [GitHub](https://github.com/jolideco/jolideco) | [Paper Arxiv](https://arxiv.org/abs/2403.13933) | [AstroAI Talk 2024](https://www.youtube.com/watch?v=m9IkPz5HrK4)
-
-
-
-## GMMX
-_________________________
-<img class="image-software" src="static/images/gmmx-logo.png"/>
-
-*GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in Jax**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. 
-Thanks to [Jax](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
-on large datasets. The package is designed to be easily extensible and can be used as a drop-in replacement for Scikit-Learn's GMM implementation.
-
-
-**Links:**
-[Docs](https://adonath.github.io/gmmx/) | [GitHub](https://github.com/adonath/gmmx)
 
 
 ## Pylira
