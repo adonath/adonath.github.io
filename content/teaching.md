@@ -1,7 +1,7 @@
 ## Pydantic @ Scipy 2023
 __________________________
 
-I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/) together with [Nick Langellier](https://www.linkedin.com/in/nick-langellier/). We introduced the basics of Pydantic and demonstrated how to use it in example applications.
+I have given a tutorial on [Pydantic](https://pydantic-docs.helpmanual.io/) at the [Scipy 2023 conference](https://scipy2023.scipy.org/) together with [Nick Langellier](https://www.linkedin.com/in/nick-langellier/). Using a semi-realistic ML and / or scientific software pipeline scenario we demonstrated how Pydantic can be used to support type validations for scientific data structures, APIs and configuration systems. We showed how the use of Pydantic in scientific and ML software leads to a more pleasant user experience as well as more robust and easier to maintain code. A minimum knowledge of Python type annotations, class definitions and data structures was helpful for beginners but not required. Unfortunately the YouTube recording was broken and could not be published.
 
 **Links:**
 [GitHub](https://github.com/adonath/scipy-2023-pydantic-tutorial) | [Webpage](https://axeldonath.com/scipy-2023-pydantic-tutorial/)
