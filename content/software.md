@@ -2,7 +2,7 @@
 ________________
 <img class="image-software" src="https://raw.githubusercontent.com/adonath/nanogptx/main/assets/nanogpt-jax.jpg" alt="Banner"/>
 
-NanoGPTX is a **NanoGPT implementation in pure [JAX](https://docs.jax.dev/)**. It follows best practices of working with JAX and aims for an as clean as possible implementation of a GPT2 style transformer including data preparation and training code for pre-training on known datasets such as Openwebtext.
+NanoGPTX is a **NanoGPT implementation in pure JAX**. It follows best practices of working with [JAX](https://docs.jax.dev/) and aims for an as clean as possible implementation of a GPT2 style transformer including data preparation and training code for pre-training on known datasets such as Openwebtext.
 It features a hierarchical configuration system, a single entry point command line interface, it uses [Pixi](https://pixi.prefix.dev/latest/) for environment and dependency management, provides abstract evaluation and lazy initialization, minimal data provenance etc. It can be used for educational purposes, or as a clean and hackable starting point for small scale experiments on modified architectures, training strategies or experiments in interpretability
 
 **Links:**
@@ -12,8 +12,7 @@ It features a hierarchical configuration system, a single entry point command li
 _________________________
 <img class="image-software" src="static/images/gmmx-logo.png"/>
 
-*GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in Jax**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. 
-Thanks to [Jax](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
+*GMMX* is a minimal implementation of **Gaussian Mixture Models (GMM) in JAX**. It features a simple, clean API with different abstractions for models and fitters. It currently supports fitting with the Expectation-Maximization (EM) algorithm. Thanks to [JAX](https://jax.readthedocs.io/en/latest/) it achieves an excellent performance: up to 5-6x better than Scikit-Learn for prediction and training on the CPU. It also supports GPU acceleration and can thus be used for training 
 on large datasets. The package is designed to be easily extensible and can be used as a drop-in replacement for Scikit-Learn's GMM implementation.
 
 
@@ -24,7 +23,7 @@ on large datasets. The package is designed to be easily extensible and can be us
 _________________________
 <img class="image-software"  src="https://raw.githubusercontent.com/adonath/clouseau/main/docs/_static/clouseau-banner.jpg" alt="Clouseau Banner"/>
 
-Clouseau is a **library independent forward pass inspector for neural nets**. The tool is designed to be used with [PyTorch](https://pytorch.org/) and [Jax](https://docs.jax.dev/) (others libraries might come later...). It allows you to register hooks for the forward pass of a model, and write the forward pass activations to a file for later inspection. It is useful for debugging models or transitioning models from one framework to another and checking their equivalence at any stage. In addition it can also be used as a tool to stream and record activations for work in LLM interpretability. It supports [safetensors](https://huggingface.co/docs/safetensors/index) as a serialization format and some command line utilities to diff and inspect the recorded files.
+Clouseau is a **library independent forward pass inspector for neural nets**. The tool is designed to be used with [PyTorch](https://pytorch.org/) and [](https://docs.jax.dev/) (others libraries might come later...). It allows you to register hooks for the forward pass of a model, and write the forward pass activations to a file for later inspection. It is useful for debugging models or transitioning models from one framework to another and checking their equivalence at any stage. In addition it can also be used as a tool to stream and record activations for work in LLM interpretability. It supports [safetensors](https://huggingface.co/docs/safetensors/index) as a serialization format and some command line utilities to diff and inspect the recorded files.
 
 **Links:**
 [Docs](https://adonath.github.io/clouseau/) | [GitHub](https://github.com/adonath/clouseau)
