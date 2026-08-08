@@ -65,6 +65,15 @@ It is based on a Bayesian statistical approach and allows to sample images from 
 [Scipy 2022 Talk](https://youtu.be/FYleK2-fjKE)
 
 
+## Voronoi Mosaic
+________________
+<img class="image-software" src="https://raw.githubusercontent.com/adonath/voronoi-mosaic/main/example-images/butterfly-mosaic.jpg" alt="Banner"/>
+
+Voronoi Mosaic is a small piece of software to create image mosaics using Voronoi tessellation. The method (proposed by Dobashi et al. (2002)) is very simple but creates convincing results. I have used it for the thumbnail images of my [blog](https://axeldonath.com/blog.html) and to create some artwork for slides. No need for AI for this case. Give it a try and [let me know](https://axeldonath.com/contact.html) what you have used it for!
+
+**Links:**
+[GitHub](https://github.com/adonath/voronoi-mosaic)
+
 ## Snakemake Workflows
 _________________________
 
